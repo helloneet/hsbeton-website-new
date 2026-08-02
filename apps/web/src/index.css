@@ -22,13 +22,13 @@ body {
     --secondary-foreground: 215 30% 14%;
     --muted: 210 16% 94%;
     --muted-foreground: 215 12% 42%;
-    --accent: 32 92% 48%;
-    --accent-foreground: 215 30% 10%;
+    --accent: 8 68% 52%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
     --border: 214 15% 86%;
     --input: 214 15% 86%;
-    --ring: 32 92% 48%;
+    --ring: 8 62% 49%;
     --radius: 0.25rem;
     --steel: 212 18% 24%;
   }

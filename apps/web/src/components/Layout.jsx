@@ -1,3 +1,4 @@
+import LogoImage from '@/assets/logo/logo.png';
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, MapPin, Mail } from 'lucide-react';
@@ -10,20 +11,14 @@ const nav = [
   { to: '/kontak', label: 'Kontak' },
 ];
 
-function Logo({ light }) {
+function Logo() {
   return (
-    <Link to="/" className="flex items-center gap-3">
-      <span className="grid h-10 w-10 place-items-center bg-accent text-[hsl(var(--accent-foreground))]">
-        <span className="display text-xl font-bold leading-none">HS</span>
-      </span>
-      <span className="leading-tight">
-        <span className={`display block text-xl font-bold uppercase tracking-wide ${light ? 'text-white' : 'text-foreground'}`}>
-          HS Beton
-        </span>
-        <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-          Precast Concrete
-        </span>
-      </span>
+    <Link to="/" className="flex items-center">
+      <img
+        src={LogoImage}
+        alt="HS Beton"
+        className="h-24 w-auto"
+      />
     </Link>
   );
 }
@@ -36,7 +31,7 @@ export default function Layout({ children }) {
     <div className="flex min-h-screen flex-col">
       <div className="bg-[hsl(var(--steel))] text-white/80">
         <div className="rail flex h-9 items-center justify-between text-[11px] font-medium uppercase tracking-[0.16em]">
-          <span className="hidden sm:block">Pabrik Precast · Cikarang, Bekasi</span>
+          <span className="hidden sm:block">Supplier Beton Precast</span>
           <span className="flex items-center gap-2">
             <Phone className="h-3.5 w-3.5 text-accent" strokeWidth={2} />
             {WA_DISPLAY}
@@ -117,8 +112,9 @@ export default function Layout({ children }) {
               <Logo light />
             </div>
             <p className="max-w-sm text-sm leading-relaxed">
-              Produsen beton precast untuk kontraktor, developer, dan pekerjaan infrastruktur.
-              Produksi terkontrol, pengiriman terjadwal, dokumen mutu lengkap.
+              Menyediakan produk beton precast berkualitas
+untuk mendukung proyek infrastruktur,
+kawasan industri, perumahan, dan konstruksi.
             </p>
           </div>
           <div>
@@ -142,7 +138,7 @@ export default function Layout({ children }) {
         </div>
         <div className="border-t border-white/10">
           <div className="rail py-5 text-xs uppercase tracking-[0.14em]">
-            © {new Date().getFullYear()} HS Beton — Precast Concrete Manufacturer
+            © {new Date().getFullYear()} HS Beton — Precast Concrete 
           </div>
         </div>
       </footer>

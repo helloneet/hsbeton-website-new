@@ -14,23 +14,41 @@ export default function KontakPage() {
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  const submit = async (e) => {
-    e.preventDefault();
-    if (!form.name.trim() || !form.phone.trim()) {
-      setError('Nama dan nomor telepon wajib diisi.');
-      return;
-    }
-    setStatus('loading');
-    setError('');
-    try {
-      await pocketbaseClient.collection('leads').create(form);
-      setStatus('success');
-      setForm(empty);
-    } catch (err) {
-      setStatus('idle');
-      setError('Pengiriman gagal. Silakan coba lagi atau hubungi kami via WhatsApp.');
-    }
-  };
+  const submit = (e) => {
+  e.preventDefault();
+
+  if (!form.name.trim() || !form.phone.trim()) {
+    setError('Nama dan nomor telepon wajib diisi.');
+    return;
+  }
+
+  setError('');
+
+  const message = `Halo HS Beton,
+
+Saya ingin meminta penawaran produk beton precast.
+
+Nama: ${form.name}
+Perusahaan: ${form.company || '-'}
+No. WA: ${form.phone}
+Email: ${form.email || '-'}
+
+Produk: ${form.product || '-'}
+
+Detail kebutuhan:
+${form.message || '-'}
+
+Mohon informasi harga, estimasi pengiriman, dan spesifikasi produknya.
+
+Terima kasih.`;
+
+  window.open(
+    waLink(message),
+    "_blank"
+  );
+
+  setForm(empty);
+};
 
   const inputCls =
     'min-h-[48px] w-full border border-border bg-white px-4 text-sm outline-none transition focus:border-accent focus:ring-1 focus:ring-accent';
@@ -41,7 +59,7 @@ export default function KontakPage() {
         <title>Kontak & Permintaan Penawaran — HS Beton</title>
         <meta
           name="description"
-          content="Hubungi HS Beton untuk penawaran beton precast. Isi form permintaan penawaran atau chat WhatsApp sales kami di Cikarang, Bekasi."
+          content="Hubungi HS Beton untuk penawaran beton precast. Isi form permintaan penawaran atau chat WhatsApp sales kami di Cilegon, Banten."
         />
       </Helmet>
 
@@ -52,8 +70,7 @@ export default function KontakPage() {
             Minta penawaran proyek
           </h1>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Sampaikan jenis produk, volume, dan lokasi kirim. Tim estimasi kami membalas
-            dalam 24 jam kerja.
+            Sampaikan jenis produk, volume, dan lokasi kirim. Tim kami akan membalas segera mungkin.
           </p>
         </div>
       </section>
@@ -65,8 +82,8 @@ export default function KontakPage() {
               <CheckCircle2 className="h-10 w-10 text-accent" strokeWidth={1.75} />
               <h2 className="display mt-5 text-3xl font-bold uppercase">Permintaan terkirim</h2>
               <p className="mt-3 max-w-md text-sm text-muted-foreground">
-                Terima kasih. Tim kami akan menghubungi Anda dalam 24 jam kerja. Untuk kebutuhan
-                mendesak, silakan langsung chat WhatsApp.
+                Terima kasih. Tim kami akan menghubungi Anda dalam jam kerja. Untuk kebutuhan
+                mendesak, silakan langsung telepon WhatsApp.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a href={waLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-[48px] items-center bg-accent px-6 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))]">
@@ -136,8 +153,8 @@ export default function KontakPage() {
           {[
             [MapPin, 'Alamat Pabrik', ADDRESS],
             [Mail, 'Email', EMAIL],
-            [Phone, 'Telepon Kantor', '(021) 8990 1234'],
-            [Clock, 'Jam Operasional', 'Senin–Jumat 08.00–17.00 · Sabtu 08.00–13.00'],
+            [Phone, 'Telepon Kantor', '(+62) 895 424 035 145'],
+            [Clock, 'Jam Operasional', 'Senin–Jumat 08.00–17.00 | Sabtu 09.00–13.00'],
           ].map(([Icon, title, body]) => (
             <div key={title} className="flex gap-4 bg-white p-7">
               <Icon className="mt-0.5 h-5 w-5 shrink-0 text-accent" strokeWidth={1.75} />

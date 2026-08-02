@@ -10,7 +10,7 @@ export default function TentangPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Tentang Kami — HS Beton, Produsen Precast Cikarang</title>
+        <title>Tentang Kami — HS Beton, Supplier Beton Precast Berkualitas</title>
         <meta
           name="description"
           content="Profil HS Beton: pabrik beton precast di Cikarang dengan batching plant sendiri, kontrol mutu K-350, dan pengalaman melayani kontraktor infrastruktur sejak 2009."
@@ -28,7 +28,7 @@ export default function TentangPage() {
         <div>
           <img src={PLANT} alt="Produksi dan kontrol mutu di pabrik HS Beton" className="aspect-[3/2] w-full object-cover" />
           <div className="mt-6 grid grid-cols-2 gap-px bg-border">
-            {[['2009', 'Mulai produksi'], ['1,2 Ha', 'Luas area pabrik'], ['4.000 m³', 'Kapasitas per bulan'], ['ISO-ready', 'Prosedur QC']].map(([v, l]) => (
+            {[['10 Tahun', 'Pengalaman Produksi'], ['50,000+', 'Unit Terkirim'], ['25+', 'Mitra Proyek'], ['K-350', 'Mutu Standar']].map(([v, l]) => (
               <div key={l} className="bg-white p-5">
                 <p className="display text-2xl font-bold">{v}</p>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">{l}</p>
@@ -38,31 +38,25 @@ export default function TentangPage() {
         </div>
         <div>
           <h2 className="display text-3xl font-bold uppercase leading-tight sm:text-4xl">
-            Mitra precast untuk pekerjaan yang tidak boleh gagal
+            MITRA BETON PRECAST TERPERCAYA UNTUK PROYEK ANDA
           </h2>
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground">
             <p>
-              HS Beton berdiri sejak 2009 di kawasan industri Cikarang, Bekasi, dengan fokus tunggal:
-              memproduksi komponen beton pracetak untuk pekerjaan drainase, jalan, dan pemagaran.
-              Kami melayani kontraktor umum, developer kawasan, dan penyedia jasa infrastruktur pemerintah.
+              HS Beton merupakan produsen beton precast yang berfokus pada kebutuhan proyek infrastruktur, kawasan industri, perumahan, dan konstruksi komersial. Dengan pengalaman lebih dari satu dekade, kami menghadirkan produk beton pracetak yang diproduksi secara terstandar, berkualitas, dan siap dikirim sesuai kebutuhan proyek
             </p>
             <p>
-              Produksi dilakukan di pabrik sendiri dengan batching plant terintegrasi, sehingga mix design,
-              slump, dan masa curing dapat kami kendalikan penuh. Setiap batch diuji tekan di umur 7 dan 28 hari,
-              dan hasilnya kami serahkan bersama surat jalan pengiriman.
+              Seluruh proses produksi dilakukan di fasilitas sendiri dengan pengawasan kualitas pada setiap tahapan, mulai dari batching, pengecoran, curing, hingga pemeriksaan akhir. Setiap produk dipersiapkan agar memenuhi spesifikasi teknis dan mendukung kelancaran pekerjaan di lapangan.
             </p>
             <p>
-              Bagi tim proyek, hal yang paling menentukan bukan hanya harga, tetapi kepastian jadwal.
-              Karena itu kami menetapkan slot produksi sejak PO diterima dan memberi update mingguan
-              hingga barang tiba di lokasi.
+              Kami percaya bahwa keberhasilan proyek tidak hanya ditentukan oleh kualitas produk, tetapi juga ketepatan pengiriman, komunikasi yang responsif, dan pelayanan yang dapat diandalkan. Karena itu, setiap permintaan penawaran kami tangani dengan proses yang jelas dan transparan.
             </p>
           </div>
 
           <div className="mt-8 divide-y divide-border border-y border-border">
             {[
-              ['Nilai kerja', 'Presisi dimensi, kejujuran mutu, dan komunikasi lapangan yang cepat.'],
-              ['Cakupan kirim', 'Jabodetabek, Karawang, Purwakarta, Bandung, dan Banten.'],
-              ['Legalitas', 'Badan usaha berbadan hukum, NPWP dan dokumen pengadaan lengkap.'],
+              ['Produksi', 'Produksi dilakukan dengan pengawasan kualitas pada setiap tahapan untuk menjaga mutu produk.'],
+              ['Pengiriman', 'Jadwal pengiriman disesuaikan dengan kebutuhan proyek serta didukung armada yang siap melayani berbagai wilayah.'],
+              ['Legalitas', 'Badan usaha berbadan hukum dengan dokumen administrasi yang siap mendukung kebutuhan pengadaan proyek.'],
             ].map(([k, v]) => (
               <div key={k} className="grid gap-1 py-5 sm:grid-cols-[10rem_1fr]">
                 <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">{k}</span>
@@ -72,7 +66,7 @@ export default function TentangPage() {
           </div>
 
           <Link to="/kontak" className="mt-8 inline-flex min-h-[52px] items-center justify-center bg-[hsl(var(--primary))] px-8 text-sm font-semibold uppercase tracking-[0.14em] text-white active:scale-[0.98]">
-            Hubungi Tim Estimasi
+            Hubungi Tim HS Beton
           </Link>
         </div>
       </section>
@@ -82,7 +76,7 @@ export default function TentangPage() {
         <div className="absolute inset-0 bg-[hsl(var(--primary))]/60" />
         <div className="rail absolute inset-0 flex items-center">
           <p className="display max-w-2xl text-3xl font-bold uppercase leading-tight text-white sm:text-5xl">
-            Stok siap kirim, produksi berjalan setiap hari kerja
+            Menghadirkan Kualitas. Membangun Kepercayaan.
           </p>
         </div>
       </section>

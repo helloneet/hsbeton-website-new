@@ -32,7 +32,10 @@ export default function ProdukPage() {
       <section className="rail py-16 lg:py-20">
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {products.map((p) => (
-            <article key={p.slug} className="group flex flex-col border border-border bg-white transition hover:border-accent">
+            <article
+  key={p.slug}
+  className="group flex flex-col border border-border bg-white transition-all duration-300 hover:border-accent hover:shadow-md"
+>
               <div className="aspect-[4/3] overflow-hidden">
                 <img src={p.image} alt={`Produk ${p.name} HS Beton`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
@@ -45,7 +48,7 @@ export default function ProdukPage() {
                     href={waLink(`Halo HS Beton, saya ingin penawaran untuk produk ${p.name}.`)}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex min-h-[44px] flex-1 items-center justify-center gap-2 bg-accent px-4 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))] active:scale-[0.98]"
+                    className="inline-flex min-h-[44px] flex-1 items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] px-4 text-xs font-semibold uppercase tracking-[0.12em] text-white transition-colors active:scale-[0.98]"
                   >
                     <MessageCircle className="h-4 w-4" /> WhatsApp
                   </a>
@@ -53,7 +56,7 @@ export default function ProdukPage() {
                     to="/kontak"
                     className="inline-flex min-h-[44px] items-center justify-center border border-border px-4 text-xs font-semibold uppercase tracking-[0.12em] text-foreground hover:border-foreground active:scale-[0.98]"
                   >
-                    Form
+                    Penawaran
                   </Link>
                 </div>
               </div>
