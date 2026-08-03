@@ -151,7 +151,7 @@ Terima kasih.`;
             </a>
           </div>
           {[
-            [MapPin, 'Alamat Pabrik', ADDRESS],
+            [MapPin, 'Alamat', ADDRESS],
             [Mail, 'Email', EMAIL],
             [Phone, 'Telepon Kantor', '(+62) 895 424 035 145'],
             [Clock, 'Jam Operasional', 'Senin–Jumat 08.00–17.00 | Sabtu 09.00–13.00'],
