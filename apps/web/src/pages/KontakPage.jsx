@@ -59,7 +59,7 @@ Terima kasih.`;
         <title>Kontak & Permintaan Penawaran — HS Beton</title>
         <meta
           name="description"
-          content="Hubungi HS Beton untuk penawaran beton precast. Isi form permintaan penawaran atau chat WhatsApp sales kami di Cilegon, Banten."
+          content="Hubungi HS Beton untuk penawaran beton precast. Isi form permintaan penawaran atau chat WhatsApp sales kami di Tangerang Selatan, Banten."
         />
       </Helmet>
 

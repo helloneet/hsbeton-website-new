@@ -2022,3 +2022,245 @@
 ## 2026-08-02 21:29:10.720Z click
 - element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"MENGHADIRKAN KUALITAS. MEMBANGUN KEPERCAYAAN.Beton Precast untuk Keandalan Proyek AndaHS Beton menyediakan berbagai macam produk beton precast berkualitas untuk mendukung proyek infrastruktur, kawasan industri, perumahan, dan bangunan komersial dengan mutu yang terjaga serta pengiriman yang tepat waktu.Minta Penawaran Lihat Katalog Produk"}
 
+## 2026-08-02 23:23:22.483Z load
+- url: http://192.168.18.5:3000/
+
+## 2026-08-02 23:23:22.678Z navigate
+- url: http://192.168.18.5:3000/
+- via: replaceState
+
+## 2026-08-02 23:23:54.848Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"MENGHADIRKAN KUALITAS. MEMBANGUN KEPERCAYAAN.Beton Precast untuk Keandalan Proyek AndaHS Beton menyediakan berbagai macam produk beton precast berkualitas untuk mendukung proyek infrastruktur, kawasan industri, perumahan, dan bangunan komersial dengan mutu yang terjaga serta pengiriman yang tepat waktu.Minta Penawaran Lihat Katalog Produk"}
+
+## 2026-08-02 23:25:36.778Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Produk"}
+
+## 2026-08-02 23:25:36.779Z navigate
+- url: http://192.168.18.5:3000/produk
+- via: pushState
+
+## 2026-08-02 23:25:40.538Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":" WhatsApp"}
+
+## 2026-08-02 23:25:51.788Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Konsultasi Sekarang"}
+
+## 2026-08-02 23:25:56.948Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Penawaran"}
+
+## 2026-08-02 23:25:56.948Z navigate
+- url: http://192.168.18.5:3000/kontak
+- via: pushState
+
+## 2026-08-02 23:26:04.868Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Tentang Kami"}
+
+## 2026-08-02 23:26:04.869Z navigate
+- url: http://192.168.18.5:3000/tentang-kami
+- via: pushState
+
+## 2026-08-02 23:26:14.877Z click
+- element: {"tag":"nav","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeProdukTentang KamiKontakMinta Penawaran"}
+
+## 2026-08-02 23:26:15.598Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Produk"}
+
+## 2026-08-02 23:26:15.598Z navigate
+- url: http://192.168.18.5:3000/produk
+- via: pushState
+
+## 2026-08-02 23:26:20.527Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HomeProdukTentang KamiKontakMinta Penawaran"}
+
+## 2026-08-02 23:26:21.117Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Home"}
+
+## 2026-08-02 23:26:21.118Z navigate
+- url: http://192.168.18.5:3000/
+- via: pushState
+
+## 2026-08-03 23:07:55.511Z load
+- url: http://192.168.1.10:3000/
+
+## 2026-08-03 23:07:55.932Z navigate
+- url: http://192.168.1.10:3000/
+- via: replaceState
+
+## 2026-08-03 23:07:59.099Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Produk"}
+
+## 2026-08-03 23:07:59.102Z navigate
+- url: http://192.168.1.10:3000/produk
+- via: pushState
+
+## 2026-08-03 23:08:06.530Z load
+- url: http://192.168.1.10:3000/produk
+
+## 2026-08-03 23:15:02.738Z console.error
+- text: [vite] Failed to reload /src/pages/ProdukPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:02.740Z console.error
+- text: [vite] Failed to reload /src/pages/KontakPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:02.740Z console.error
+- text: [vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:02.741Z console.error
+- text: [vite] Failed to reload /src/components/Layout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:11.286Z console.error
+- text: [vite] Failed to reload /src/pages/ProdukPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:11.287Z console.error
+- text: [vite] Failed to reload /src/components/Layout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:11.288Z console.error
+- text: [vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:11.289Z console.error
+- text: [vite] Failed to reload /src/pages/KontakPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:14.017Z console.error
+- text: 
+    [vite] ReferenceError: Road is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798913328:35:12
+
+## 2026-08-03 23:15:14.018Z console.error
+- text: [vite] Failed to reload /src/pages/ProdukPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:14.018Z console.error
+- text: 
+    [vite] ReferenceError: Road is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798913328:35:12
+
+## 2026-08-03 23:15:14.018Z console.error
+- text: [vite] Failed to reload /src/pages/KontakPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:14.019Z console.error
+- text: 
+    [vite] ReferenceError: Road is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798913328:35:12
+
+## 2026-08-03 23:15:14.019Z console.error
+- text: [vite] Failed to reload /src/components/Layout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:14.019Z console.error
+- text: 
+    [vite] ReferenceError: Road is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798913328:35:12
+
+## 2026-08-03 23:15:14.020Z console.error
+- text: [vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:16.560Z console.error
+- text: [vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:16.561Z console.error
+- text: [vite] Failed to reload /src/components/Layout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:16.562Z console.error
+- text: [vite] Failed to reload /src/pages/ProdukPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:16.563Z console.error
+- text: [vite] Failed to reload /src/pages/KontakPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:18.447Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798917815:28:12
+
+## 2026-08-03 23:15:18.447Z console.error
+- text: [vite] Failed to reload /src/components/Layout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:18.448Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798917815:28:12
+
+## 2026-08-03 23:15:18.448Z console.error
+- text: [vite] Failed to reload /src/pages/KontakPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:18.448Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798917815:28:12
+
+## 2026-08-03 23:15:18.449Z console.error
+- text: [vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:18.449Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798917815:28:12
+
+## 2026-08-03 23:15:18.450Z console.error
+- text: [vite] Failed to reload /src/pages/ProdukPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:20.483Z console.error
+- text: [vite] Failed to reload /src/pages/KontakPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:20.484Z console.error
+- text: [vite] Failed to reload /src/components/Layout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:20.485Z console.error
+- text: [vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:20.485Z console.error
+- text: [vite] Failed to reload /src/pages/ProdukPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:22.230Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798921984:28:12
+
+## 2026-08-03 23:15:22.231Z console.error
+- text: [vite] Failed to reload /src/pages/HomePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:22.231Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798921984:28:12
+
+## 2026-08-03 23:15:22.232Z console.error
+- text: [vite] Failed to reload /src/pages/ProdukPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:22.234Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798921984:28:12
+
+## 2026-08-03 23:15:22.234Z console.error
+- text: [vite] Failed to reload /src/components/Layout.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:22.239Z console.error
+- text: 
+    [vite] ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798921984:28:12
+
+## 2026-08-03 23:15:22.240Z console.error
+- text: [vite] Failed to reload /src/pages/KontakPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+
+## 2026-08-03 23:15:49.476Z load
+- url: http://192.168.1.10:3000/produk
+
+## 2026-08-03 23:15:49.915Z window.error
+- message: Uncaught ReferenceError: Box is not defined
+- source: http://192.168.1.10:3000/src/data/site.js?t=1785798921984
+- line: 28
+- col: 12
+- stack: 
+    ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798921984:28:12
+
+## 2026-08-03 23:15:55.267Z load
+- url: http://192.168.1.10:3000/produk
+
+## 2026-08-03 23:15:55.466Z window.error
+- message: Uncaught ReferenceError: Box is not defined
+- source: http://192.168.1.10:3000/src/data/site.js?t=1785798921984
+- line: 28
+- col: 12
+- stack: 
+    ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js?t=1785798921984:28:12
+

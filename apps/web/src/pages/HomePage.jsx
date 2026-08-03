@@ -40,7 +40,7 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative flex min-h-[100dvh] items-end overflow-hidden bg-[hsl(var(--primary))]">
-        <img src={HERO} alt="Yard produksi beton precast HS Beton di Cilegon" className="absolute inset-0 h-full w-full object-cover opacity-55" />
+        <img src={HERO} alt="Produksi beton precast HS Beton di Cilegon" className="absolute inset-0 h-full w-full object-cover opacity-55" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--primary))] via-[hsl(var(--primary))]/70 to-transparent" />
         <div className="rail relative w-full pb-16 pt-32">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }}>
