@@ -138,7 +138,7 @@ kawasan industri, perumahan, dan konstruksi.
         </div>
         <div className="border-t border-white/10">
           <div className="rail py-5 text-xs uppercase tracking-[0.14em]">
-            © {new Date().getFullYear()} HS Beton — Precast Concrete 
+            © 2016-{new Date().getFullYear()} HS Beton — Precast Concrete 
           </div>
         </div>
       </footer>
