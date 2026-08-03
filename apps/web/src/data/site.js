@@ -1,7 +1,7 @@
 export const WA_NUMBER = '6289630672153';
 export const WA_DISPLAY = '+62 896-3067-2153';
 export const ADDRESS= 'Tangerang Selatan, Banten ';
-export const EMAIL = 'hsbetongrup@gmail.com';
+export const EMAIL = 'hsbetonid@gmail.com';
 
 export const waLink = (text) =>
   `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text || 'Halo HS Beton, saya ingin meminta penawaran Beton.')}`;
