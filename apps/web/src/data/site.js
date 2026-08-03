@@ -25,14 +25,14 @@ export const products = [
     name: 'Box Culvert',
     spec: 'Mutu K-350',
     desc: 'Solusi gorong-gorong beton pracetak untuk saluran air, crossing jalan, dan kebutuhan drainase bawah tanah dengan kekuatan tinggi.',
-    image: Box-Culvert,
+    image: BoxCulvert,
   },
   {
     slug: 'road-barrier',
     name: 'Road Barrier',
     spec: 'Mutu K-350',
     desc: 'Pembatas jalan beton untuk pengaturan lalu lintas, pengamanan area proyek, serta pekerjaan jalan dan konstruksi.',
-    image: Road-Barrier,
+    image: RoadBarrier,
   },
   {
     slug: 'pagar-panel',

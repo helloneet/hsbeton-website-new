@@ -2264,3 +2264,56 @@
     ReferenceError: Box is not defined
         at http://192.168.1.10:3000/src/data/site.js?t=1785798921984:28:12
 
+## 2026-08-03 23:21:54.356Z load
+- url: http://192.168.1.10:3000/
+
+## 2026-08-03 23:21:54.627Z window.error
+- message: Uncaught ReferenceError: Box is not defined
+- source: http://192.168.1.10:3000/src/data/site.js
+- line: 28
+- col: 12
+- stack: 
+    ReferenceError: Box is not defined
+        at http://192.168.1.10:3000/src/data/site.js:28:12
+
+## 2026-08-03 23:27:04.316Z load
+- url: http://localhost:3000/
+
+## 2026-08-03 23:27:04.908Z window.error
+- message: Uncaught ReferenceError: Box is not defined
+- source: http://localhost:3000/src/data/site.js
+- line: 28
+- col: 12
+- stack: 
+    ReferenceError: Box is not defined
+        at http://localhost:3000/src/data/site.js:28:12
+
+## 2026-08-03 23:27:37.968Z load
+- url: http://localhost:3000/
+
+## 2026-08-03 23:27:38.080Z window.error
+- message: Uncaught ReferenceError: Box is not defined
+- source: http://localhost:3000/src/data/site.js
+- line: 28
+- col: 12
+- stack: 
+    ReferenceError: Box is not defined
+        at http://localhost:3000/src/data/site.js:28:12
+
+## 2026-08-03 23:31:39.852Z load
+- url: http://192.168.1.10:3000/
+
+## 2026-08-03 23:31:40.061Z navigate
+- url: http://192.168.1.10:3000/
+- via: replaceState
+
+## 2026-08-03 23:31:42.166Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Produk"}
+
+## 2026-08-03 23:31:42.170Z navigate
+- url: http://192.168.1.10:3000/produk
+- via: pushState
+
+## 2026-08-03 23:31:50.405Z click
+- element: {"tag":"main","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"KatalogProduk beton precastSemua item tersedia dalam ukuran standar maupun custom sesuai gambar kerja. Harga mengikuti volume, lokasi kirim, dan jadwal proyek — silakan minta penawaran.U-DitchMutu K-350Digunakan sebagai saluran drainase untuk kawasan industri, jalan, perumahan, hingga proyek infrastruktur dengan sambungan yang presisi dan mutu terjaga. WhatsAppPenawaranBox CulvertMutu K-350Solusi gorong-gorong beton pracetak untuk saluran air, crossing jalan, dan kebutuhan drainase bawah tanah dengan kekuatan tinggi. WhatsAppPenawaranRoad BarrierMutu K-350Pembatas jalan beton untuk pengaturan lalu lintas, pengamanan area proyek, serta pekerjaan jalan dan konstruksi. WhatsAppPenawaranPagar Panel BetonMutu K-350. Tinggi 1,6 – 2,4 mSistem pagar beton pracetak yang kokoh, praktis dipasang, dan cocok untuk area industri, proyek, maupun kawasan komersial. WhatsAppPenawaranBuis BetonMutu K-350 · Panjang 50 & 100 cmPipa beton pracetak untuk saluran drainase, sumur resapan, dan septic tank dengan daya tahan tinggi. WhatsAppPenawaranKanstinMutu K-350Pembatas trotoar, taman, dan jalan dengan dimensi presisi untuk hasil pemasangan yang rapi dan kuat. WhatsAppPenawaranButuh ukuran custom atau produk di luar katalog?Konsultasi Sekarang"}
+
