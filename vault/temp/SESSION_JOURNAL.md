@@ -2317,3 +2317,26 @@
 ## 2026-08-03 23:31:50.405Z click
 - element: {"tag":"main","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"KatalogProduk beton precastSemua item tersedia dalam ukuran standar maupun custom sesuai gambar kerja. Harga mengikuti volume, lokasi kirim, dan jadwal proyek — silakan minta penawaran.U-DitchMutu K-350Digunakan sebagai saluran drainase untuk kawasan industri, jalan, perumahan, hingga proyek infrastruktur dengan sambungan yang presisi dan mutu terjaga. WhatsAppPenawaranBox CulvertMutu K-350Solusi gorong-gorong beton pracetak untuk saluran air, crossing jalan, dan kebutuhan drainase bawah tanah dengan kekuatan tinggi. WhatsAppPenawaranRoad BarrierMutu K-350Pembatas jalan beton untuk pengaturan lalu lintas, pengamanan area proyek, serta pekerjaan jalan dan konstruksi. WhatsAppPenawaranPagar Panel BetonMutu K-350. Tinggi 1,6 – 2,4 mSistem pagar beton pracetak yang kokoh, praktis dipasang, dan cocok untuk area industri, proyek, maupun kawasan komersial. WhatsAppPenawaranBuis BetonMutu K-350 · Panjang 50 & 100 cmPipa beton pracetak untuk saluran drainase, sumur resapan, dan septic tank dengan daya tahan tinggi. WhatsAppPenawaranKanstinMutu K-350Pembatas trotoar, taman, dan jalan dengan dimensi presisi untuk hasil pemasangan yang rapi dan kuat. WhatsAppPenawaranButuh ukuran custom atau produk di luar katalog?Konsultasi Sekarang"}
 
+## 2026-08-05 06:17:02.385Z load
+- url: http://192.168.1.70:3000/
+
+## 2026-08-05 06:17:03.074Z navigate
+- url: http://192.168.1.70:3000/
+- via: replaceState
+
+## 2026-08-05 06:17:11.588Z click
+- element: {"tag":"body","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"/>\n\t\t\n\t\t\n\t\tHS Beton — Produsen Beton Precast untuk Kontraktor & Infrastruktur\n\t\tconst SITE_PAGES_ENDPOINT = '/__horizons/site-pages';\n\nconst OUTGOING_SITE_PAGES_MESSAGE = 'sitePages';\nconst INCOMING_REQUEST_SITE_PAGES_MESSAGE = 'request-site-pages';\n\nconst ALLOWED_PARENT_ORIGINS = [\n\t'https://horizons.hostinger.com',\n\t'https://horizons.hostinger.dev',\n\t'https://horizons-frontend-local.hostinger.dev',\n\t'http://localhost:4000',\n];\n\nfunction postSitePages(pages) {\n\tlet parentOrigin = window.location.ancestorOrigins?.[0];\n\tif (!parentOrigin && document.referrer) {\n\t\ttry {\n\t\t\tparentOrigin = new URL(document.referrer).origin;\n\t\t} catch {}\n\t}\n\tif (parentOrigin && ALLOWED_PARENT_ORIGINS.includes(parentOrigin)) {\n\t\twindow.parent.postMessage({ type: OUTGOING_SITE_PAGES_MESSAGE, payload: { pages } }, parentOrigin);\n\t}\n}\n\nasync function sendSitePagesToParent() {\n\tif (window.self === window.top) {\n\t\treturn;\n\t}\n\n\ttry {\n\t\tconst response = await fetch(SITE_PAGES_ENDPOINT);\n\t\tif (!response.ok) {\n\t\t\tthrow new Error(`HTTP ${response.status}`);\n\t\t}\n\t\tpostSitePages(await response.json());\n\t} catch (error) {\n\t\tconsole.error('[site-pages] Failed to send site pages to parent:', error);\n\t}\n}\n\nif (window.self !== window.top) {\n\twindow.addEventListener('load', sendSitePagesToParent);\n\twindow.addEventListener('message', (event) => {\n\t\tif (event.data?.type === INCOMING_REQUEST_SITE_PAGES_MESSAGE) {\n\t\t\tsendSitePagesToParent();\n\t\t}\n\t});\n}\n\n\t\t\n\t#root[data-edit-mode-enabled=\"true\"] {\n\t\tcursor: pointer;\n\t}\n\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id] {\n\t\tcursor: pointer;\n\t\toutline: 2px dashed #357DF9;\n\t\toutline-offset: 2px;\n\t\tmin-height: 1em;\n\t\toverflow-wrap: anywhere;\n\t\tmin-width: 0;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] img[data-edit-id] {\n\t\toutline-offset: -2px;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id]:hover {\n\t\tbackground-color: #357DF933;\n\t\toutline-color: #357DF9;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id][contenteditable=\"true\"] {\n\t\toutline-style: solid;..."}
+
+## 2026-08-05 06:17:12.047Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Supplier Beton Precast+62 896-3067-2153"}
+
+## 2026-08-05 06:17:13.148Z load
+- url: http://192.168.1.70:3000/
+
+## 2026-08-05 06:18:10.366Z load
+- url: http://192.168.1.70:3000/
+
+## 2026-08-05 06:18:10.785Z navigate
+- url: http://192.168.1.70:3000/
+- via: replaceState
+
