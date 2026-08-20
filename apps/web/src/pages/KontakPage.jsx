@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { MapPin, Phone, Mail, Clock, CheckCircle2, Loader2 } from 'lucide-react';
 import Layout from '@/components/Layout';
 import pocketbaseClient from '@/lib/pocketbaseClient';
-import { products, waLink, ADDRESS, EMAIL, WA_DISPLAY } from '@/data/site';
+import { products, waLink, ADDRESS, EMAIL, WA_DISPLAY, trackLead, trackWhatsApp } from '@/data/site';
 
 const empty = { name: '', company: '', phone: '', email: '', product: '', message: '' };
 
@@ -23,6 +23,7 @@ export default function KontakPage() {
   }
 
   setError('');
+  trackLead();
 
   const message = `Halo HS Beton,
 
@@ -86,7 +87,11 @@ Terima kasih.`;
                 mendesak, silakan langsung telepon WhatsApp.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <a href={waLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-[48px] items-center bg-accent px-6 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))]">
+                <a href={waLink()} 
+                target="_blank" 
+                rel="noreferrer" 
+                onClick={trackWhatsApp}
+                className="inline-flex min-h-[48px] items-center bg-accent px-6 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))]">
                   Chat WhatsApp
                 </a>
                 <button type="button" onClick={() => setStatus('idle')} className="inline-flex min-h-[48px] items-center border border-border px-6 text-xs font-semibold uppercase tracking-[0.12em]">
@@ -146,7 +151,11 @@ Terima kasih.`;
             <p className="eyebrow mb-3">Respon Tercepat</p>
             <h2 className="display text-2xl font-bold uppercase">WhatsApp Sales</h2>
             <p className="mt-2 text-sm text-white/70">{WA_DISPLAY}</p>
-            <a href={waLink()} target="_blank" rel="noreferrer" className="mt-5 inline-flex min-h-[48px] items-center bg-accent px-6 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))]">
+            <a href={waLink()} 
+            target="_blank" 
+            rel="noreferrer" 
+            onClick={trackWhatsApp}
+            className="mt-5 inline-flex min-h-[48px] items-center bg-accent px-6 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))]">
               Chat Sekarang
             </a>
           </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, ShieldCheck, Truck, Factory, FileCheck2 } from 'lucide-react';
 import Layout from '@/components/Layout';
-import { products, waLink } from '@/data/site';
+import { products, waLink, trackWhatsApp } from '@/data/site';
 import klien1 from "@/assets/client/klien-1.jpeg";
 import klien2 from "@/assets/client/klien-2.jpeg";
 import klien3 from "@/assets/client/klien-3.png";
@@ -206,7 +206,11 @@ export default function HomePage() {
             <Link to="/kontak" className="inline-flex min-h-[52px] items-center justify-center bg-white px-8 text-sm font-semibold uppercase tracking-[0.14em] text-[hsl(var(--primary))] active:scale-[0.98]">
               Isi Form Penawaran
             </Link>
-            <a href={waLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-[52px] items-center justify-center bg-[#25D366] hover:bg-[#20ba5a] px-8 text-sm font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300">
+            <a href={waLink()} 
+            target="_blank" 
+            rel="noreferrer" 
+            onClick={trackWhatsApp}
+            className="inline-flex min-h-[52px] items-center justify-center bg-[#25D366] hover:bg-[#20ba5a] px-8 text-sm font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300">
               Chat WhatsApp
             </a>
           </div>

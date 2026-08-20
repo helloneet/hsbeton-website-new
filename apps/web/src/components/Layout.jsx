@@ -2,7 +2,8 @@ import LogoImage from '@/assets/logo/logo.png';
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, MapPin, Mail } from 'lucide-react';
-import { WA_DISPLAY, ADDRESS, EMAIL, waLink } from '@/data/site';
+import { WA_DISPLAY, ADDRESS, EMAIL, waLink, trackWhatsApp } from '@/data/site';
+import FloatingWhatsapp from "./FloatingWhatsapp";
 
 const nav = [
   { to: '/', label: 'Home' },
@@ -93,6 +94,7 @@ export default function Layout({ children }) {
                 href={waLink()}
                 target="_blank"
                 rel="noreferrer"
+                onClick={trackWhatsApp}
                 className="mt-2 bg-accent py-4 text-center text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))]"
               >
                 WhatsApp Sales
@@ -103,6 +105,7 @@ export default function Layout({ children }) {
       </header>
 
       <main className="flex-1">{children}</main>
+      <FloatingWhatsapp />
 
       <footer className="bg-[hsl(var(--primary))] text-white/70">
         <div className="hatch h-1.5 w-full" />

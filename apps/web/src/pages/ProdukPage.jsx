@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MessageCircle } from 'lucide-react';
 import Layout from '@/components/Layout';
-import { products, waLink } from '@/data/site';
+import { products, waLink, trackWhatsApp } from '@/data/site';
 
 export default function ProdukPage() {
   return (
@@ -48,6 +48,7 @@ export default function ProdukPage() {
                     href={waLink(`Halo HS Beton, saya ingin penawaran untuk produk ${p.name}.`)}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={trackWhatsApp}
                     className="inline-flex min-h-[44px] flex-1 items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] px-4 text-xs font-semibold uppercase tracking-[0.12em] text-white transition-colors active:scale-[0.98]"
                   >
                     <MessageCircle className="h-4 w-4" /> WhatsApp
@@ -70,7 +71,11 @@ export default function ProdukPage() {
           <p className="display max-w-xl text-2xl font-semibold uppercase text-white sm:text-3xl">
             Butuh ukuran custom atau produk di luar katalog?
           </p>
-          <a href={waLink('Halo HS Beton, saya butuh produk precast ukuran custom.')} target="_blank" rel="noreferrer" className="inline-flex min-h-[52px] items-center justify-center bg-accent px-8 text-sm font-semibold uppercase tracking-[0.14em] text-[hsl(var(--accent-foreground))] active:scale-[0.98]">
+          <a href={waLink('Halo HS Beton, saya butuh produk precast ukuran custom.')} 
+          target="_blank" 
+          rel="noreferrer" 
+          onClick={trackWhatsApp}
+          className="inline-flex min-h-[52px] items-center justify-center bg-accent px-8 text-sm font-semibold uppercase tracking-[0.14em] text-[hsl(var(--accent-foreground))] active:scale-[0.98]">
             Konsultasi Sekarang
           </a>
         </div>

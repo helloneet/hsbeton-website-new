@@ -12,6 +12,16 @@ export const EMAIL = 'hsbetonid@gmail.com';
 export const waLink = (text) =>
   `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text || 'Halo HS Beton, saya ingin meminta penawaran Beton.')}`;
 
+export const trackLead = () => {
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    window.fbq('track', 'Lead');
+  }
+};
+export const trackWhatsApp = () => {
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    window.fbq('track', 'Contact');
+  }
+};
 export const products = [
   {
     slug: 'u-ditch',
