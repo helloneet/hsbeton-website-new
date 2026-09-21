@@ -3,6 +3,8 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import ProdukPage from './pages/ProdukPage';
+import ArtikelPage from './pages/ArtikelPage';
+import ArtikelDetailPage from './pages/ArtikelDetailPage';
 import TentangPage from './pages/TentangPage';
 import KontakPage from './pages/KontakPage';
 
@@ -13,6 +15,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/produk" element={<ProdukPage />} />
+                <Route path="/artikel" element={<ArtikelPage />} />
+                <Route path="/artikel/:slug" element={<ArtikelDetailPage />} />
                 <Route path="/tentang-kami" element={<TentangPage />} />
                 <Route path="/kontak" element={<KontakPage />} />
             </Routes>

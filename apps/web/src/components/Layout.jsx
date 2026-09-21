@@ -8,6 +8,7 @@ import FloatingWhatsapp from "./FloatingWhatsapp";
 const nav = [
   { to: '/', label: 'Home' },
   { to: '/produk', label: 'Produk' },
+  { to: '/artikel', label: 'Artikel' },
   { to: '/tentang-kami', label: 'Tentang Kami' },
   { to: '/kontak', label: 'Kontak' },
 ];
