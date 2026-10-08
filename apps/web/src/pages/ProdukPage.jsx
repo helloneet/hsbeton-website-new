@@ -12,7 +12,7 @@ export default function ProdukPage() {
         <title>Produk Beton Precast — U-Ditch, Box Culvert, Road Barrier | HS Beton</title>
         <meta
           name="description"
-          content="Katalog produk beton precast HS Beton: U-ditch, box culvert, road barrier, pagar panel, buis beton, dan kanstin dengan spesifikasi mutu K-300 hingga K-350."
+          content="Katalog produk beton precast HS Beton: U-ditch, box culvert, road barrier, pagar panel, buis beton, dan kanstin dengan spesifikasi yang dapat disesuaikan dengan kebutuhan proyek."
         />
       </Helmet>
 
