@@ -1,195 +1,214 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, CheckCircle2, MessageCircle } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  CheckCircle2,
+  MessageCircle,
+} from 'lucide-react';
+
 import Layout from '@/components/Layout';
 import { waLink } from '@/data/site';
+
+import Uditch from '@/assets/Product/Uditch.jpg';
+import BoxCulvert from '@/assets/Product/Box-Culvert.jpg';
+import RoadBarrier from '@/assets/Product/Road-Barrier.jpg';
+import Kanstin from '@/assets/Product/Kanstin.jpg';
+import Buis from '@/assets/Product/Buis.jpg';
+import Panel from '@/assets/Product/Panel.jpg';
 
 const articles = {
   'u-ditch': {
     category: 'DRAINASE BETON',
-    title: 'U-DITCH MUTU K-350',
+    title: 'U-DITCH VARIASI MUTU BETON',
+    image: Uditch,
     subtitle:
-      'Saluran drainase beton pracetak, kuat dan presisi untuk berbagai skala proyek.',
+      'Saluran drainase beton pracetak yang presisi untuk berbagai kebutuhan proyek.',
     description:
-      'U-Ditch adalah saluran drainase beton pracetak berbentuk U yang berfungsi untuk mengalirkan air hujan dan air limbah pada proyek jalan, kawasan industri, hingga perumahan. HS Beton memproduksi U-Ditch dengan mutu beton K-350, yaitu beton dengan kuat tekan tinggi yang mampu menahan beban berat dan tekanan tanah dalam jangka panjang. Karena diproduksi secara pracetak di pabrik, U-Ditch dari HS Beton memiliki dimensi yang presisi, permukaan yang rapi, dan siap pasang langsung di lokasi proyek tanpa proses pengecoran di tempat.',
+      'U-Ditch adalah saluran drainase beton pracetak berbentuk U yang digunakan untuk mengalirkan air hujan dan air permukaan pada proyek jalan, kawasan industri, hingga perumahan. Produk ini dibuat dengan sistem pracetak untuk menghasilkan dimensi yang rapi dan memudahkan proses pemasangan di lokasi proyek. HS Beton menyediakan pilihan mutu dan ukuran yang dapat disesuaikan dengan kebutuhan serta spesifikasi teknis proyek.',
     uses: [
-      'Saluran drainase pada proyek jalan raya dan jalan tol',
-      'Sistem pembuangan air pada kawasan industri dan pergudangan',
-      'Saluran irigasi untuk proyek pertanian dan perkebunan',
-      'Drainase kawasan perumahan, ruko, dan area komersial',
+      'Saluran drainase pada proyek jalan raya dan kawasan infrastruktur.',
+      'Sistem pembuangan air pada kawasan industri dan pergudangan.',
+      'Saluran irigasi untuk proyek pertanian dan perkebunan.',
+      'Drainase kawasan perumahan, ruko, dan area komersial.',
     ],
     advantages: [
-      'Mutu beton K-350 tahan terhadap beban kendaraan berat dan tekanan tanah',
-      'Dimensi presisi dan permukaan rapi hasil produksi pracetak',
-      'Pemasangan lebih cepat dibanding metode cor di tempat, sehingga menghemat waktu pengerjaan proyek',
-      'Tahan terhadap cuaca ekstrem dan minim perawatan dalam jangka panjang',
-      'Risiko keretakan dan kebocoran lebih rendah dibanding beton konvensional yang dicor manual',
+      'Pilihan mutu beton dapat disesuaikan dengan kebutuhan proyek.',
+      'Dimensi presisi dan permukaan rapi berkat proses produksi pracetak.',
+      'Pemasangan lebih praktis dibandingkan pengecoran langsung di lokasi.',
+      'Mendukung pekerjaan drainase dengan proses instalasi yang lebih terencana.',
+      'Tersedia pilihan ukuran sesuai gambar kerja dan kebutuhan lapangan.',
     ],
     specifications: [
-      "Mutu beton K-350 (setara fc' sekitar 29,05 MPa)",
-      'Tersedia berbagai ukuran lebar dan tinggi sesuai kebutuhan proyek',
-      'Dapat diproduksi custom size sesuai gambar kerja dan spesifikasi teknis proyek',
+      'Variasi mutu beton sesuai kebutuhan dan spesifikasi proyek.',
+      'Tersedia berbagai pilihan lebar dan tinggi.',
+      'Ukuran dapat disesuaikan dengan gambar kerja dan spesifikasi teknis proyek.',
     ],
     offer:
-      'HS Beton memberikan harga kompetitif untuk pembelian dalam jumlah besar dan kebutuhan proyek skala besar, dilengkapi dengan layanan pengiriman ke lokasi proyek serta konsultasi gratis untuk membantu menentukan ukuran dan jumlah U-Ditch yang dibutuhkan.',
+      'HS Beton melayani kebutuhan U-Ditch untuk proyek dengan dukungan konsultasi ukuran, jumlah unit, dan pengiriman ke lokasi proyek. Hubungi tim kami untuk mendiskusikan kebutuhan serta mendapatkan penawaran harga.',
     cta:
-      'Butuh U-Ditch untuk proyek Anda? Hubungi tim HS Beton sekarang melalui WhatsApp atau telepon untuk konsultasi kebutuhan dan penawaran harga terbaik.',
+      'Butuh U-Ditch untuk proyek Anda? Konsultasikan kebutuhan ukuran, mutu beton, dan jumlah unit bersama tim HS Beton.',
   },
 
   'box-culvert': {
     category: 'DRAINASE BETON',
-    title: 'BOX CULVERT MUTU K-350',
+    title: 'BOX CULVERT VARIASI MUTU BETON',
+    image: BoxCulvert,
     subtitle:
-      'Gorong-gorong beton pracetak berkapasitas besar untuk infrastruktur berat.',
+      'Gorong-gorong beton pracetak untuk kebutuhan drainase dan infrastruktur.',
     description:
-      'Box Culvert adalah gorong-gorong beton pracetak berbentuk kotak yang dirancang untuk menyalurkan aliran air dalam volume besar di bawah permukaan jalan atau area konstruksi. HS Beton memproduksi Box Culvert dengan mutu beton K-350 sehingga mampu menahan beban struktural yang berat, termasuk beban lalu lintas kendaraan di atasnya. Desain kotak pada Box Culvert memberikan kapasitas aliran air yang lebih besar dibandingkan saluran berbentuk U, menjadikannya pilihan utama untuk proyek infrastruktur skala besar.',
+      'Box Culvert adalah elemen beton pracetak berbentuk kotak yang digunakan untuk menyalurkan air di bawah jalan maupun area konstruksi. Bentuk dan dimensinya dapat direncanakan berdasarkan kebutuhan aliran air, kondisi lokasi, serta beban yang harus ditanggung. HS Beton menyediakan pilihan mutu dan ukuran yang dapat disesuaikan dengan spesifikasi teknis proyek.',
     uses: [
-      'Gorong-gorong di bawah jalan raya dan jalan tol',
-      'Saluran air dan sistem drainase pada proyek infrastruktur skala besar',
-      'Jembatan kecil dan box culvert crossing',
-      'Sistem drainase kawasan industri dengan volume air tinggi',
+      'Gorong-gorong di bawah jalan raya dan akses kendaraan.',
+      'Saluran air pada proyek infrastruktur dan kawasan industri.',
+      'Saluran lintasan air pada area konstruksi.',
+      'Sistem drainase dengan kebutuhan dimensi dan kapasitas tertentu.',
     ],
     advantages: [
-      'Mutu beton K-350 mampu menahan beban lalu lintas kendaraan berat di atasnya',
-      'Kapasitas aliran air lebih besar dibanding saluran berbentuk U',
-      'Proses pracetak menjamin kekuatan struktural yang konsisten pada setiap unit',
-      'Instalasi lebih cepat dan efisien dibanding pengecoran langsung di lokasi',
-      'Tahan lama dan minim perawatan meski terus menerus menerima beban dan paparan cuaca',
+      'Pilihan mutu beton disesuaikan dengan kebutuhan struktural proyek.',
+      'Bentuk kotak mendukung perencanaan saluran dengan dimensi yang terukur.',
+      'Sistem pracetak membantu membuat proses pemasangan lebih terencana.',
+      'Dimensi dapat direncanakan berdasarkan kebutuhan aliran air.',
+      'Mendukung pekerjaan infrastruktur dengan spesifikasi yang terukur.',
     ],
     specifications: [
-      'Mutu beton K-350',
-      'Tersedia berbagai ukuran sesuai kebutuhan debit air dan beban proyek',
-      'Dapat diproduksi sesuai spesifikasi teknis dan gambar kerja proyek',
+      'Variasi mutu beton sesuai kebutuhan dan spesifikasi proyek.',
+      'Pilihan ukuran disesuaikan dengan kebutuhan aliran dan kondisi lapangan.',
+      'Spesifikasi dapat mengacu pada gambar kerja proyek.',
     ],
     offer:
-      'HS Beton menawarkan harga bersaing untuk pengadaan dalam volume besar, didukung tim teknis yang membantu menentukan ukuran Box Culvert sesuai kebutuhan drainase proyek, serta layanan pengiriman ke lokasi proyek di berbagai wilayah.',
+      'HS Beton membantu pengadaan Box Culvert untuk kebutuhan proyek, termasuk konsultasi ukuran, jumlah unit, dan spesifikasi teknis. Hubungi tim kami untuk mendiskusikan kebutuhan serta mendapatkan penawaran.',
     cta:
-      'Diskusikan kebutuhan Box Culvert proyek Anda dengan tim HS Beton. Hubungi sekarang untuk mendapatkan penawaran harga dan jadwal pengiriman.',
+      'Diskusikan kebutuhan Box Culvert proyek Anda bersama tim HS Beton untuk menentukan ukuran dan spesifikasi yang sesuai.',
   },
 
   'road-barrier': {
     category: 'INFRASTRUKTUR',
-    title: 'ROAD BARRIER MUTU K-350',
+    title: 'ROAD BARRIER VARIASI MUTU BETON',
+    image: RoadBarrier,
     subtitle:
-      'Pembatas jalan beton pracetak, standar keselamatan dan tahan benturan.',
+      'Pembatas jalan beton pracetak untuk pengaturan lalu lintas dan area proyek.',
     description:
-      'Road Barrier adalah pembatas jalan beton pracetak yang berfungsi sebagai pemisah lajur, pengaman tepi jalan, dan pembatas area konstruksi. HS Beton memproduksi Road Barrier dengan mutu beton K-350 agar mampu menahan benturan kendaraan dan tekanan lalu lintas secara berulang, sehingga tetap aman digunakan dalam jangka panjang pada berbagai kondisi proyek.',
+      'Road Barrier adalah pembatas beton pracetak yang digunakan untuk memisahkan jalur kendaraan, mengarahkan arus lalu lintas, dan membatasi area pekerjaan. Pemilihan dimensi serta spesifikasi beton perlu disesuaikan dengan fungsi, kondisi pemasangan, dan persyaratan keselamatan proyek. HS Beton menyediakan produk dengan pilihan spesifikasi sesuai kebutuhan pengadaan.',
     uses: [
-      'Pembatas lajur pada jalan raya dan jalan tol',
-      'Pengaman area konstruksi dan proyek infrastruktur',
-      'Pembatas sementara pada area parkir dan kawasan industri',
-      'Pengarah lalu lintas pada proyek perbaikan dan pemeliharaan jalan',
+      'Pembatas lajur pada jalan raya dan area infrastruktur.',
+      'Pembatas area konstruksi dan pekerjaan jalan.',
+      'Pengaturan lalu lintas pada area parkir dan kawasan industri.',
+      'Pemisah jalur kendaraan pada area proyek.',
     ],
     advantages: [
-      'Mutu beton K-350 memberikan ketahanan terhadap benturan kendaraan',
-      'Bentuk mengikuti standar keselamatan jalan yang umum digunakan pada proyek infrastruktur',
-      'Permukaan halus dan presisi karena diproduksi secara pracetak',
-      'Mudah dipindahkan dan dipasang ulang sesuai perubahan kebutuhan proyek',
-      'Tahan terhadap cuaca dan tidak mudah retak dalam penggunaan jangka panjang',
+      'Pilihan spesifikasi beton dapat disesuaikan dengan kebutuhan penggunaan.',
+      'Bentuk pracetak membantu menghasilkan dimensi yang konsisten.',
+      'Mendukung pengaturan dan pemisahan area lalu lintas.',
+      'Pemasangan dapat direncanakan sesuai tata letak area proyek.',
+      'Dapat digunakan untuk berbagai kebutuhan pembatas area.',
     ],
     specifications: [
-      'Mutu beton K-350',
-      'Ukuran standar sesuai kebutuhan proyek jalan',
-      'Tersedia dalam jumlah besar untuk kebutuhan proyek skala nasional',
+      'Variasi mutu beton sesuai kebutuhan dan spesifikasi proyek.',
+      'Ukuran disesuaikan dengan kebutuhan penggunaan.',
+      'Jumlah dan spesifikasi pengadaan dapat direncanakan berdasarkan kebutuhan proyek.',
     ],
     offer:
-      'HS Beton memberikan harga kompetitif untuk pengadaan dalam skala proyek, ketersediaan stok untuk pengiriman cepat, serta dukungan teknis terkait pemasangan Road Barrier di lapangan.',
+      'HS Beton melayani kebutuhan Road Barrier untuk proyek infrastruktur dan pengaturan area. Konsultasikan jumlah unit, ukuran, serta kebutuhan pengiriman kepada tim kami untuk mendapatkan penawaran.',
     cta:
-      'Pesan Road Barrier untuk kebutuhan proyek Anda. Hubungi tim HS Beton sekarang untuk cek ketersediaan stok dan harga.',
+      'Butuh Road Barrier untuk proyek Anda? Hubungi HS Beton untuk mendiskusikan kebutuhan dan spesifikasi pengadaan.',
   },
 
   'pagar-panel': {
     category: 'PAGAR BETON',
-    title: 'PAGAR PANEL BETON MUTU K-350',
+    title: 'PAGAR PANEL BETON VARIASI MUTU BETON',
+    image: Panel,
     subtitle:
-      'Sistem pagar pracetak yang kokoh, cepat dipasang, dan fleksibel sesuai kebutuhan tinggi area.',
+      'Sistem pagar beton pracetak yang praktis untuk berbagai kebutuhan pembatas area.',
     description:
-      'Pagar Panel Beton adalah sistem pagar pracetak yang terdiri dari panel panel beton yang dipasang bertingkat pada tiang kolom. HS Beton memproduksi Pagar Panel Beton dengan mutu beton K-350 dan menyediakan pilihan tinggi mulai dari 1,6 meter hingga 2,4 meter, sehingga dapat disesuaikan dengan tingkat keamanan yang dibutuhkan pada masing masing area, mulai dari kawasan industri hingga perumahan.',
+      'Pagar Panel Beton merupakan sistem pagar pracetak yang terdiri dari panel beton dan tiang kolom sebagai penyangga. Sistem ini digunakan untuk membatasi lahan, kawasan industri, gudang, maupun area perumahan. HS Beton menyediakan pilihan spesifikasi dan tinggi pagar yang dapat dibahas berdasarkan kebutuhan keamanan, kondisi lahan, serta rancangan proyek.',
     uses: [
-      'Pagar keliling pabrik dan kawasan industri',
-      'Pagar pembatas gudang dan area logistik',
-      'Pagar keamanan perumahan dan kompleks perkantoran',
-      'Pembatas lahan kosong dan area proyek yang sedang berjalan',
+      'Pagar keliling pabrik dan kawasan industri.',
+      'Pagar pembatas gudang dan area logistik.',
+      'Pagar untuk perumahan dan kawasan perkantoran.',
+      'Pembatas lahan kosong dan area proyek konstruksi.',
     ],
     advantages: [
-      'Mutu beton K-350 memberikan kekuatan struktural dan ketahanan jangka panjang',
-      'Pilihan tinggi 1,6 sampai 2,4 meter memberikan fleksibilitas sesuai kebutuhan keamanan area',
-      'Sistem panel mempercepat proses pemasangan dibanding tembok bata konvensional',
-      'Minim perawatan dan tahan terhadap cuaca ekstrem',
-      'Tampilan rapi dan seragam karena setiap panel diproduksi secara pracetak',
+      'Sistem panel mendukung proses pemasangan yang lebih praktis.',
+      'Pilihan spesifikasi disesuaikan dengan kebutuhan proyek.',
+      'Tampilan panel yang seragam membantu menghasilkan pagar yang rapi.',
+      'Pilihan tinggi dapat direncanakan berdasarkan kebutuhan area.',
+      'Cocok untuk kebutuhan pembatas lahan dalam berbagai skala proyek.',
     ],
     specifications: [
-      'Mutu beton K-350',
-      'Tinggi tersedia: 1,6 m, 1,8 m, 2,0 m, hingga 2,4 m',
-      'Dapat disesuaikan dengan tinggi kolom dan kebutuhan teknis proyek',
+      'Variasi mutu beton sesuai kebutuhan dan spesifikasi proyek.',
+      'Pilihan tinggi yang tercantum pada data produk: 1,6 m hingga 2,4 m.',
+      'Kebutuhan panel dan kolom disesuaikan dengan ukuran area serta rancangan proyek.',
     ],
     offer:
-      'HS Beton menawarkan harga per panel yang kompetitif untuk pembelian dalam jumlah besar, dilengkapi konsultasi gratis untuk menentukan tinggi dan jumlah panel sesuai luas area, serta layanan pengiriman ke lokasi proyek.',
+      'HS Beton membantu pengadaan Pagar Panel Beton dengan konsultasi kebutuhan tinggi, jumlah panel, dan kebutuhan kolom berdasarkan luas area. Hubungi tim kami untuk mendiskusikan spesifikasi dan penawaran harga.',
     cta:
-      'Tanyakan harga Pagar Panel Beton sesuai tinggi kebutuhan Anda. Hubungi tim HS Beton sekarang.',
+      'Butuh Pagar Panel Beton untuk membatasi area proyek? Konsultasikan ukuran, tinggi, dan jumlah kebutuhan Anda bersama HS Beton.',
   },
 
   'buis-beton': {
     category: 'DRAINASE BETON',
-    title: 'BUIS BETON MUTU K-350',
+    title: 'BUIS BETON VARIASI MUTU BETON',
+    image: Buis,
     subtitle:
-      'Beton pracetak berongga untuk sumur, saluran resapan, dan drainase vertikal.',
+      'Beton pracetak berbentuk silinder untuk sumur, resapan, dan kebutuhan drainase.',
     description:
-      'Buis Beton adalah beton pracetak berbentuk silinder berongga yang umum digunakan sebagai dinding sumur, saluran resapan, dan konstruksi drainase vertikal. HS Beton memproduksi Buis Beton dengan mutu beton K-350 dan menyediakan dua pilihan panjang, yaitu 50 cm dan 100 cm, sehingga memudahkan penyesuaian dengan kedalaman dan kebutuhan teknis proyek, baik untuk skala rumah tangga maupun proyek infrastruktur.',
+      'Buis Beton adalah elemen beton pracetak berbentuk silinder berongga yang dapat digunakan untuk konstruksi sumur, sumur resapan, dan saluran drainase tertentu. Pilihan ukuran dan panjang perlu disesuaikan dengan kedalaman, kondisi tanah, serta kebutuhan penggunaan. HS Beton menyediakan pilihan spesifikasi yang dapat dikonsultasikan berdasarkan kebutuhan proyek.',
     uses: [
-      'Dinding sumur resapan dan sumur bor',
-      'Saluran drainase vertikal pada proyek infrastruktur',
-      'Konstruksi gorong-gorong kecil dan saluran air rumah tangga',
-      'Kebutuhan proyek skala kecil hingga menengah',
+      'Dinding sumur dan sumur resapan.',
+      'Kebutuhan saluran drainase tertentu.',
+      'Konstruksi saluran air pada area rumah tinggal.',
+      'Kebutuhan pekerjaan konstruksi skala kecil hingga besar.',
     ],
     advantages: [
-      'Mutu beton K-350 menjamin kekuatan dan daya tahan meski terpendam dalam tanah',
-      'Dua pilihan panjang, 50 cm dan 100 cm, mempermudah penyesuaian dengan kedalaman proyek',
-      'Proses pracetak menghasilkan bentuk presisi dan mudah disusun bertingkat',
-      'Tahan terhadap tekanan tanah dan air dalam jangka panjang',
-      'Cocok untuk kebutuhan proyek kecil maupun pengadaan dalam jumlah besar',
+      'Pilihan mutu beton disesuaikan dengan kebutuhan penggunaan.',
+      'Bentuk pracetak membantu menghasilkan dimensi yang konsisten.',
+      'Tersedia pilihan panjang untuk mendukung kebutuhan pemasangan.',
+      'Pemasangan dapat direncanakan sesuai kedalaman dan kondisi lokasi.',
+      'Dapat digunakan untuk berbagai kebutuhan konstruksi dan drainase.',
     ],
     specifications: [
-      'Mutu beton K-350',
-      'Panjang tersedia: 50 cm dan 100 cm',
-      'Diameter dapat disesuaikan dengan kebutuhan proyek',
+      'Variasi mutu beton sesuai kebutuhan dan spesifikasi proyek.',
+      'Pilihan panjang berdasarkan data produk: 50 cm dan 100 cm.',
+      'Diameter disesuaikan dengan kebutuhan penggunaan dan ketersediaan produk.',
     ],
     offer:
-      'Stok Buis Beton tersedia untuk pengiriman cepat, dengan harga bersaing baik untuk pembelian satuan maupun dalam jumlah grosir. Tim HS Beton juga siap membantu konsultasi untuk menentukan jumlah dan ukuran yang sesuai kebutuhan proyek Anda.',
+      'HS Beton melayani kebutuhan Buis Beton untuk berbagai pekerjaan konstruksi. Konsultasikan diameter, panjang, jumlah unit, dan lokasi pengiriman kepada tim kami untuk memperoleh penawaran.',
     cta:
-      'Cek ketersediaan stok Buis Beton hari ini. Hubungi tim HS Beton sekarang melalui WhatsApp atau telepon.',
+      'Butuh Buis Beton untuk sumur atau drainase? Hubungi HS Beton untuk mendiskusikan ukuran dan kebutuhan pengadaan.',
   },
 
-  'kanstin': {
+  kanstin: {
     category: 'INFRASTRUKTUR',
-    title: 'KANSTIN MUTU K-350',
+    title: 'KANSTIN VARIASI MUTU BETON',
+    image: Kanstin,
     subtitle:
-      'Pembatas jalan dan trotoar beton pracetak, presisi dan tahan lama.',
+      'Pembatas jalan, trotoar, dan area taman dengan bentuk beton pracetak yang rapi.',
     description:
-      'Kanstin adalah beton pracetak yang berfungsi sebagai pembatas antara jalan, trotoar, taman, dan area parkir. HS Beton memproduksi Kanstin dengan mutu beton K-350 agar tahan terhadap beban kendaraan dan aktivitas pejalan kaki secara terus menerus, sekaligus memberikan tampilan yang rapi dan tertata pada penataan kawasan proyek.',
+      'Kanstin merupakan elemen beton pracetak yang digunakan sebagai pembatas antara jalan, trotoar, taman, dan area parkir. Selain membantu membentuk batas area, kanstin juga mendukung penataan kawasan agar lebih rapi. HS Beton menyediakan pilihan spesifikasi yang dapat disesuaikan dengan fungsi, ukuran, dan kebutuhan teknis proyek.',
     uses: [
-      'Pembatas jalan dan trotoar pada proyek infrastruktur',
-      'Pembatas taman dan area hijau pada proyek perumahan dan komersial',
-      'Pembatas area parkir dan jalur pejalan kaki',
-      'Elemen estetika sekaligus fungsi struktural pada penataan kawasan',
+      'Pembatas jalan dan trotoar pada proyek infrastruktur.',
+      'Pembatas taman dan area hijau di kawasan perumahan.',
+      'Pembatas area parkir dan jalur pejalan kaki.',
+      'Penataan batas area pada proyek komersial dan kawasan publik.',
     ],
     advantages: [
-      'Mutu beton K-350 memberikan ketahanan terhadap beban dan tekanan yang berulang',
-      'Bentuk presisi dan permukaan rapi hasil produksi pracetak',
-      'Pemasangan lebih cepat dibanding kanstin yang dicor langsung di tempat',
-      'Tahan terhadap cuaca dan tidak mudah retak',
-      'Tersedia dalam jumlah besar untuk kebutuhan proyek skala luas',
+      'Pilihan mutu beton mengikuti kebutuhan dan spesifikasi proyek.',
+      'Bentuk pracetak membantu menghasilkan dimensi yang konsisten.',
+      'Pemasangan dapat direncanakan mengikuti tata letak area.',
+      'Mendukung penataan jalan, trotoar, taman, dan area parkir.',
+      'Tersedia untuk kebutuhan pengadaan dalam berbagai skala proyek.',
     ],
     specifications: [
-      'Mutu beton K-350',
-      'Ukuran standar sesuai kebutuhan proyek jalan dan trotoar',
-      'Dapat disesuaikan dengan spesifikasi teknis proyek',
+      'Variasi mutu beton sesuai kebutuhan dan spesifikasi proyek.',
+      'Ukuran disesuaikan dengan fungsi dan kebutuhan area.',
+      'Spesifikasi dapat mengacu pada gambar kerja proyek.',
     ],
     offer:
-      'HS Beton memberikan harga kompetitif untuk pengadaan dalam volume besar, stok yang siap dikirim cepat ke lokasi proyek, serta konsultasi teknis gratis untuk membantu menentukan kebutuhan Kanstin Anda.',
+      'HS Beton melayani pengadaan Kanstin untuk kebutuhan proyek jalan, trotoar, taman, dan kawasan komersial. Hubungi tim kami untuk konsultasi spesifikasi, jumlah kebutuhan, dan penawaran harga.',
     cta:
-      'Pesan Kanstin untuk proyek Anda sekarang. Hubungi tim HS Beton untuk mendapatkan penawaran terbaik.',
+      'Butuh Kanstin untuk proyek Anda? Konsultasikan ukuran, jumlah, dan spesifikasi kebutuhan bersama tim HS Beton.',
   },
 };
 
@@ -202,7 +221,10 @@ function Section({ title, items }) {
 
       <ul className="space-y-4">
         {items.map((item, index) => (
-          <li key={index} className="flex gap-3 text-base leading-relaxed text-foreground/70">
+          <li
+            key={index}
+            className="flex gap-3 text-base leading-relaxed text-foreground/70"
+          >
             <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
             <span>{item}</span>
           </li>
@@ -228,7 +250,8 @@ export default function ArtikelDetailPage() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-lg text-foreground/60">
-              Artikel yang kamu cari tidak tersedia atau alamat artikelnya tidak sesuai.
+              Artikel yang kamu cari tidak tersedia atau alamat artikelnya
+              tidak sesuai.
             </p>
 
             <Link
@@ -248,15 +271,12 @@ export default function ArtikelDetailPage() {
     <Layout>
       <Helmet>
         <title>{article.title} — HS Beton</title>
-        <meta
-          name="description"
-          content={article.subtitle}
-        />
+        <meta name="description" content={article.subtitle} />
       </Helmet>
 
       {/* HERO */}
       <section className="bg-[hsl(var(--primary))] text-white">
-        <div className="rail py-20 sm:py-28">
+        <div className="rail py-16 sm:py-20 lg:py-24">
           <Link
             to="/artikel"
             className="mb-10 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-white/60 transition hover:text-accent"
@@ -265,24 +285,31 @@ export default function ArtikelDetailPage() {
             Kembali ke Artikel
           </Link>
 
-          <p className="eyebrow mb-5">
-            {article.category}
-          </p>
+          <p className="eyebrow mb-5">{article.category}</p>
 
-          <h1 className="display max-w-5xl text-5xl font-bold uppercase leading-[0.95] sm:text-7xl lg:text-8xl">
+          <h1 className="display max-w-5xl text-4xl font-bold uppercase leading-[0.98] sm:text-6xl lg:text-7xl">
             {article.title}
           </h1>
 
           <p className="mt-7 max-w-3xl text-lg leading-relaxed text-white/70 sm:text-xl">
             {article.subtitle}
           </p>
+
+          {/* FOTO UTAMA PRODUK */}
+          <div className="mt-10 max-w-5xl overflow-hidden border border-white/15 bg-white/5">
+            <img
+              src={article.image}
+              alt={article.title}
+              className="aspect-[16/9] w-full object-cover"
+              fetchPriority="high"
+            />
+          </div>
         </div>
       </section>
 
       {/* CONTENT */}
       <main className="rail py-16 sm:py-24">
         <div className="grid gap-14 lg:grid-cols-[1fr_320px]">
-          
           {/* ARTICLE */}
           <article className="max-w-3xl">
             <section className="pb-10">
@@ -294,20 +321,11 @@ export default function ArtikelDetailPage() {
             </section>
 
             <div className="space-y-10">
-              <Section
-                title="Kegunaan"
-                items={article.uses}
-              />
+              <Section title="Kegunaan" items={article.uses} />
 
-              <Section
-                title="Keunggulan"
-                items={article.advantages}
-              />
+              <Section title="Keunggulan" items={article.advantages} />
 
-              <Section
-                title="Spesifikasi"
-                items={article.specifications}
-              />
+              <Section title="Spesifikasi" items={article.specifications} />
 
               <section className="border-t border-border pt-8">
                 <h2 className="display mb-5 text-2xl font-bold uppercase sm:text-3xl">
@@ -323,9 +341,7 @@ export default function ArtikelDetailPage() {
               <section className="relative overflow-hidden bg-[hsl(var(--primary))] p-8 text-white sm:p-10">
                 <div className="absolute right-0 top-0 h-32 w-32 translate-x-12 -translate-y-12 rounded-full bg-accent/20" />
 
-                <p className="eyebrow mb-4">
-                  BUTUH PRODUK INI?
-                </p>
+                <p className="eyebrow mb-4">BUTUH PRODUK INI?</p>
 
                 <h2 className="display max-w-2xl text-3xl font-bold uppercase leading-tight sm:text-4xl">
                   Konsultasikan kebutuhan proyek Anda
@@ -336,7 +352,9 @@ export default function ArtikelDetailPage() {
                 </p>
 
                 <a
-                  href={waLink()}
+                  href={waLink(
+                    `Halo HS Beton, saya ingin konsultasi mengenai ${article.title}. Bisa bantu informasikan spesifikasi dan penawaran harganya?`
+                  )}
                   target="_blank"
                   rel="noreferrer"
                   className="mt-7 inline-flex items-center gap-3 bg-accent px-7 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(var(--accent-foreground))] transition hover:brightness-95"
@@ -352,9 +370,16 @@ export default function ArtikelDetailPage() {
           {/* SIDEBAR */}
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="border border-border bg-muted/30 p-6">
-              <p className="eyebrow mb-4">
-                PRODUK HS BETON
-              </p>
+              <p className="eyebrow mb-4">PRODUK HS BETON</p>
+
+              <div className="mb-5 overflow-hidden bg-white">
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  className="aspect-[4/3] w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
 
               <h3 className="display text-2xl font-bold uppercase">
                 {article.title}
@@ -365,10 +390,13 @@ export default function ArtikelDetailPage() {
               <p className="text-sm leading-relaxed text-foreground/60">
                 Produk beton precast untuk mendukung kebutuhan proyek
                 infrastruktur, kawasan industri, perumahan, dan konstruksi.
+                Pilihan spesifikasi dapat didiskusikan sesuai kebutuhan proyek.
               </p>
 
               <a
-                href={waLink()}
+                href={waLink(
+                  `Halo HS Beton, saya ingin meminta penawaran untuk ${article.title}.`
+                )}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 flex items-center justify-center gap-2 bg-accent px-5 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-[hsl(var(--accent-foreground))] transition hover:brightness-95"

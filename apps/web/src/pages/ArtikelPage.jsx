@@ -2,6 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
+import Uditch from '@/assets/Product/Uditch.jpg';
+import BoxCulvert from '@/assets/Product/Box-Culvert.jpg';
+import RoadBarrier from '@/assets/Product/Road-Barrier.jpg';
+import Kanstin from '@/assets/Product/Kanstin.jpg';
+import Buis from '@/assets/Product/Buis.jpg';
+import Panel from '@/assets/Product/Panel.jpg';
+
 const articles = [
   {
     slug: 'u-ditch',
@@ -9,6 +16,7 @@ const articles = [
     excerpt:
       'Saluran drainase beton pracetak, kuat dan presisi untuk berbagai skala proyek.',
     category: 'Drainase Beton',
+    image: Uditch,
   },
   {
     slug: 'box-culvert',
@@ -16,6 +24,7 @@ const articles = [
     excerpt:
       'Gorong-gorong beton pracetak berkapasitas besar untuk infrastruktur berat.',
     category: 'Drainase Beton',
+    image: BoxCulvert,
   },
   {
     slug: 'road-barrier',
@@ -23,6 +32,7 @@ const articles = [
     excerpt:
       'Pembatas jalan beton pracetak, standar keselamatan dan tahan benturan.',
     category: 'Infrastruktur',
+    image: RoadBarrier,
   },
   {
     slug: 'pagar-panel',
@@ -30,6 +40,7 @@ const articles = [
     excerpt:
       'Sistem pagar pracetak yang kokoh, cepat dipasang, dan fleksibel sesuai kebutuhan tinggi area.',
     category: 'Pagar Beton',
+    image: Panel,
   },
   {
     slug: 'buis-beton',
@@ -37,6 +48,7 @@ const articles = [
     excerpt:
       'Beton pracetak berongga untuk sumur, saluran resapan, dan drainase vertikal.',
     category: 'Drainase Beton',
+    image: Buis,
   },
   {
     slug: 'kanstin',
@@ -44,6 +56,7 @@ const articles = [
     excerpt:
       'Pembatas jalan dan trotoar beton pracetak, presisi dan tahan lama.',
     category: 'Infrastruktur',
+    image: Kanstin,
   },
 ];
 
@@ -87,29 +100,42 @@ export default function ArtikelPage() {
             <Link
               key={article.slug}
               to={`/artikel/${article.slug}`}
-              className="group flex h-full flex-col border border-border bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
+              className="group flex h-full flex-col overflow-hidden border border-border bg-white transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-xl"
             >
-              <div className="mb-6 flex items-center justify-between">
-                <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-accent">
-                  {article.category}
-                </span>
-
-                <ArrowRight
-                  className="h-5 w-5 text-accent transition-transform duration-300 group-hover:translate-x-1"
-                  strokeWidth={1.8}
+              {/* Product Image */}
+              <div className="aspect-[4/3] overflow-hidden bg-gray-100">
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
                 />
               </div>
 
-              <h3 className="display text-2xl font-black uppercase leading-tight text-foreground">
-                {article.title}
-              </h3>
+              {/* Card Content */}
+              <div className="flex flex-1 flex-col p-7">
+                <div className="mb-6 flex items-center justify-between">
+                  <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-accent">
+                    {article.category}
+                  </span>
 
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
-                {article.excerpt}
-              </p>
+                  <ArrowRight
+                    className="h-5 w-5 text-accent transition-transform duration-300 group-hover:translate-x-1"
+                    strokeWidth={1.8}
+                  />
+                </div>
 
-              <div className="mt-8 border-t border-border pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70 group-hover:text-accent">
-                Baca Selengkapnya
+                <h3 className="display text-2xl font-black uppercase leading-tight text-foreground">
+                  {article.title}
+                </h3>
+
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {article.excerpt}
+                </p>
+
+                <div className="mt-8 border-t border-border pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70 group-hover:text-accent">
+                  Baca Selengkapnya
+                </div>
               </div>
             </Link>
           ))}
@@ -123,6 +149,7 @@ export default function ArtikelPage() {
             <p className="text-2xl font-bold md:text-3xl">
               Butuh produk beton untuk proyek?
             </p>
+
             <p className="mt-2 text-sm text-white/60">
               Konsultasikan kebutuhan dan spesifikasi proyek Anda dengan tim HS Beton.
             </p>
