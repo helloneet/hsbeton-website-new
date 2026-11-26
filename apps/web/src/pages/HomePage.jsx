@@ -223,7 +223,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          <Link to="/produk/u-ditch" className="group relative min-h-[250px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[320px]">
+          <Link to="/produk" className="group relative min-h-[250px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[320px]">
             <img src={products[0].image} alt="U-Ditch beton precast" loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
             <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--primary))]/90 via-[hsl(var(--primary))]/15 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-5 text-white sm:p-7">
@@ -234,7 +234,7 @@ export default function HomePage() {
               <span className="grid h-10 w-10 shrink-0 place-items-center border border-white/50 transition group-hover:bg-accent group-hover:border-accent"><ArrowUpRight className="h-5 w-5" /></span>
             </div>
           </Link>
-          <Link to="/produk/box-culvert" className="group relative min-h-[250px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[320px]">
+          <Link to="/produk" className="group relative min-h-[250px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[320px]">
             <img src={products[1].image} alt="Box Culvert beton precast" loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
             <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--primary))]/90 via-[hsl(var(--primary))]/15 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-5 text-white sm:p-7">
