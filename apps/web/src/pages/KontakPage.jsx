@@ -48,13 +48,13 @@ Terima kasih.`;
       </Helmet>
 
       <section className="bg-[#F2F3F1]">
-        <div className="rail grid gap-8 py-12 sm:py-16 lg:grid-cols-[1fr_0.65fr] lg:items-end lg:py-20">
-          <div><p className="eyebrow mb-4">Kontak / Penawaran</p><h1 className="display max-w-4xl text-[clamp(3.5rem,8vw,7.5rem)] font-bold uppercase leading-[0.82]">Mari bahas<br /><span className="text-accent">proyek Anda.</span></h1></div>
+        <div className="rail grid gap-8 py-12 sm:py-12 lg:grid-cols-[1fr_0.65fr] lg:items-end lg:py-16">
+          <div><p className="eyebrow mb-4">Kontak / Penawaran</p><h1 className="display max-w-4xl text-[clamp(3rem,6.5vw,6rem)] font-bold uppercase leading-[0.88]">Mari bahas<br /><span className="text-accent">proyek Anda.</span></h1></div>
           <p className="max-w-xl text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8 lg:justify-self-end">Ceritakan kebutuhan produk, ukuran, volume, dan lokasi pengiriman. Informasi tersebut membantu tim kami memahami kebutuhan Anda.</p>
         </div>
       </section>
 
-      <section className="rail grid gap-8 py-12 sm:py-16 lg:grid-cols-12 lg:gap-12 lg:py-20">
+      <section className="rail grid gap-8 py-10 sm:py-12 lg:grid-cols-12 lg:gap-10 lg:py-16">
         <aside className="lg:col-span-4">
           <div className="bg-[hsl(var(--primary))] p-6 text-white sm:p-8">
             <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">Kontak langsung</p>
