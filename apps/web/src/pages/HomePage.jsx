@@ -49,8 +49,8 @@ export default function HomePage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-foreground/60 sm:text-xs">Solusi beton precast · HS Beton</p>
             </div>
             <h1 className="display max-w-[720px] text-[clamp(3rem,6.2vw,6.1rem)] font-bold uppercase leading-[0.88] tracking-[-0.025em]">
-              Beton<br />Precast
-              <span className="mt-3 block text-accent">untuk proyek</span>
+              Beton Precast
+              <span className="mt-2 block text-accent">untuk proyek</span>
               <span className="block">yang kokoh.</span>
             </h1>
             <p className="mt-7 max-w-xl text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8">
