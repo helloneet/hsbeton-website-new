@@ -56,8 +56,8 @@ export default function ProdukPage() {
                 </div>
                 <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">{p.desc}</p>
                 <div className="mt-5 flex flex-col gap-3">
-                  <a href={waLink(`Halo HS Beton, saya ingin meminta penawaran untuk produk ${p.name}.`)} target="_blank" rel="noreferrer" onClick={trackWhatsApp} className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 bg-accent px-4 text-[10px] font-bold uppercase tracking-[0.1em] text-white transition hover:brightness-95"><MessageCircle className="h-4 w-4" /> Minta Penawaran</a>
-                  <Link to={`/artikel/${p.slug}`} className="inline-flex min-h-11 items-center justify-center gap-2 border border-border px-4 text-[10px] font-bold uppercase tracking-[0.1em] transition hover:border-foreground">Detail <ArrowRight className="h-4 w-4" /></Link>
+                  <a href={waLink(`Halo HS Beton, saya ingin meminta penawaran untuk produk ${p.name}.`)} target="_blank" rel="noreferrer" onClick={trackWhatsApp} className="inline-flex min-h-11 items-center justify-between gap-3 bg-accent px-4 text-[10px] font-bold uppercase tracking-[0.1em] text-white transition hover:brightness-95"><span className="inline-flex items-center gap-2"><MessageCircle className="h-4 w-4" /> Minta Penawaran</span><ArrowRight className="h-4 w-4" /></a>
+                  <Link to={`/artikel/${p.slug}`} className="inline-flex items-center gap-2 self-start py-1 text-[10px] font-bold uppercase tracking-[0.1em] text-foreground/65 transition hover:text-accent">Lihat detail produk <ArrowRight className="h-3.5 w-3.5" /></Link>
                 </div>
               </div>
             </article>
