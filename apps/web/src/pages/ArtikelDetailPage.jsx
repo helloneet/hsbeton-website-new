@@ -274,42 +274,33 @@ export default function ArtikelDetailPage() {
         <meta name="description" content={article.subtitle} />
       </Helmet>
 
-      {/* HERO */}
-      <section className="bg-[hsl(var(--primary))] text-white">
-        <div className="rail py-16 sm:py-20 lg:py-24">
-          <Link
-            to="/artikel"
-            className="mb-10 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-white/60 transition hover:text-accent"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Kembali ke Artikel
+      {/* EDITORIAL ARTICLE HERO */}
+      <section className="bg-[#F2F3F1]">
+        <div className="rail py-10 sm:py-14 lg:py-16">
+          <Link to="/artikel" className="mb-8 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.14em] text-foreground/55 transition hover:text-accent">
+            <ArrowLeft className="h-4 w-4" /> Semua Artikel
           </Link>
-
-          <p className="eyebrow mb-5">{article.category}</p>
-
-          <h1 className="display max-w-5xl text-4xl font-bold uppercase leading-[0.98] sm:text-6xl lg:text-7xl">
-            {article.title}
-          </h1>
-
-          <p className="mt-7 max-w-3xl text-lg leading-relaxed text-white/70 sm:text-xl">
-            {article.subtitle}
-          </p>
-
-          {/* FOTO UTAMA PRODUK */}
-          <div className="mt-10 max-w-5xl overflow-hidden border border-white/15 bg-white/5">
-            <img
-              src={article.image}
-              alt={article.title}
-              className="aspect-[16/9] w-full object-cover"
-              fetchPriority="high"
-            />
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-12">
+            <div>
+              <p className="eyebrow mb-4">{article.category}</p>
+              <h1 className="display max-w-3xl text-[clamp(3rem,7vw,6.5rem)] font-bold uppercase leading-[0.84]">{article.title}</h1>
+              <p className="mt-6 max-w-xl text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8">{article.subtitle}</p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <a href={waLink(`Halo HS Beton, saya ingin konsultasi mengenai ${article.title}.`)} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center gap-3 bg-accent px-5 text-xs font-bold uppercase tracking-[0.12em] text-white">Konsultasi Produk <MessageCircle className="h-4 w-4" /></a>
+                <Link to="/produk" className="inline-flex min-h-12 items-center gap-3 border border-border px-5 text-xs font-bold uppercase tracking-[0.12em]">Katalog <ArrowRight className="h-4 w-4" /></Link>
+              </div>
+            </div>
+            <div className="relative overflow-hidden bg-[#e9ebea]">
+              <img src={article.image} alt={article.title} className="aspect-[4/3] w-full object-cover" fetchPriority="high" />
+              <span className="absolute bottom-3 left-3 bg-white/90 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.14em] text-foreground">HS Beton / Product information</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CONTENT */}
-      <main className="rail py-16 sm:py-24">
-        <div className="grid gap-14 lg:grid-cols-[1fr_320px]">
+      <main className="rail py-12 sm:py-16 lg:py-20">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-14">
           {/* ARTICLE */}
           <article className="max-w-3xl">
             <section className="pb-10">
@@ -338,7 +329,7 @@ export default function ArtikelDetailPage() {
               </section>
 
               {/* CTA */}
-              <section className="relative overflow-hidden bg-[hsl(var(--primary))] p-8 text-white sm:p-10">
+              <section className="relative overflow-hidden bg-[hsl(var(--primary))] p-6 text-white sm:p-9">
                 <div className="absolute right-0 top-0 h-32 w-32 translate-x-12 -translate-y-12 rounded-full bg-accent/20" />
 
                 <p className="eyebrow mb-4">BUTUH PRODUK INI?</p>
