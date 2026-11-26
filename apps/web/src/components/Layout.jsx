@@ -19,7 +19,7 @@ function Logo({ footer = false }) {
       <img
         src={LogoImage}
         alt="HS Beton"
-        className={footer ? 'h-12 w-auto object-contain' : 'h-10 w-auto object-contain sm:h-11'}
+        className={footer ? 'h-14 w-auto max-w-[190px] object-contain' : 'h-14 w-auto max-w-[180px] object-contain sm:h-16'}
       />
     </Link>
   );
@@ -44,9 +44,9 @@ export default function Layout({ children }) {
       </div>
 
       <header className="sticky top-0 z-40 border-b border-border/80 bg-white/95 backdrop-blur-md">
-        <div className="rail flex h-[68px] items-center justify-between gap-6 sm:h-[76px]">
+        <div className="rail flex h-[72px] items-center justify-between gap-6 sm:h-[80px]">
           <Logo />
-          <nav aria-label="Navigasi utama" className="hidden items-center gap-5 lg:flex xl:gap-7">
+          <nav aria-label="Navigasi utama" className="hidden items-center gap-4 lg:flex xl:gap-6">
             {nav.map((item) => (
               <NavLink
                 key={item.to}
