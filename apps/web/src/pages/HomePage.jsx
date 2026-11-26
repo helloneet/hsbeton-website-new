@@ -71,7 +71,7 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="relative min-h-[330px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[460px] lg:min-h-[500px]">
+          <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="relative min-h-[330px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[460px] lg:min-h-[470px]">
             <img src={HERO} alt="Produk beton precast HS Beton" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#101b29]/75 via-[#101b29]/5 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-5 text-white sm:p-8">
@@ -132,9 +132,9 @@ export default function HomePage() {
       {/* FEATURE / WHY US — asymmetric split, not repeated card blocks */}
       <section className="bg-[#f0f1ef]">
         <div className="grid lg:grid-cols-2">
-          <div className="rail py-14 sm:py-16 lg:py-20 lg:pr-12">
+          <div className="rail py-12 sm:py-14 lg:py-16 lg:pr-12">
             <p className="eyebrow mb-3">02 / Tentang HS Beton</p>
-            <h2 className="display max-w-2xl text-5xl font-bold uppercase leading-[0.88] sm:text-6xl lg:text-7xl">Lebih dari<br />sekadar beton.</h2>
+            <h2 className="display max-w-2xl text-4xl font-bold uppercase leading-[0.92] sm:text-5xl lg:text-6xl">Lebih dari<br />sekadar beton.</h2>
             <p className="mt-6 max-w-xl text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8">Kebutuhan proyek bukan hanya soal produk. Spesifikasi, koordinasi, dan pengiriman perlu berjalan searah agar pekerjaan di lapangan lebih terencana.</p>
             <Link to="/tentang-kami" className="mt-7 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.14em] text-accent">Kenali HS Beton <ArrowRight className="h-4 w-4" /></Link>
             <div className="mt-10 grid gap-0 border-t border-border sm:grid-cols-2">
@@ -161,32 +161,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* APPLICATION VISUALS */}
-      <section className="rail py-12 sm:py-16 lg:py-20">
-        <div className="mb-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="eyebrow mb-3">03 / Pilihan Produk</p>
-            <h2 className="display max-w-3xl text-5xl font-bold uppercase leading-[0.88] sm:text-6xl">Untuk berbagai<br />kebutuhan konstruksi.</h2>
+      {/* PROJECT APPLICATIONS — concise editorial section */}
+      <section className="bg-[#F7F7F5]">
+        <div className="rail py-12 sm:py-14 lg:py-16">
+          <div className="mb-8 grid gap-5 border-b border-border pb-7 lg:grid-cols-[1fr_0.55fr] lg:items-end">
+            <div>
+              <p className="eyebrow mb-3">03 / Area Penggunaan</p>
+              <h2 className="display max-w-3xl text-4xl font-bold uppercase leading-[0.92] sm:text-5xl lg:text-6xl">Dibuat untuk kebutuhan<br className="hidden sm:block" /> proyek yang beragam.</h2>
+            </div>
+            <p className="max-w-md text-sm leading-7 text-muted-foreground lg:justify-self-end">Pilihan beton precast untuk mendukung pekerjaan konstruksi, dari drainase hingga penataan kawasan.</p>
           </div>
-          <p className="max-w-md text-sm leading-7 text-muted-foreground">Jelajahi beberapa produk utama dan diskusikan pilihan ukuran maupun spesifikasi sesuai gambar kerja.</p>
-        </div>
-        <div className="grid gap-4 md:grid-cols-12">
-          <Link to="/produk" className="group relative min-h-[300px] overflow-hidden bg-[hsl(var(--primary))] md:col-span-7 md:min-h-[420px]">
-            <img src={products[0].image} alt="U-Ditch beton precast" loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#111d2a]/90 via-[#111d2a]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-6 text-white sm:p-8">
-              <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/60">Drainase Beton</p><h3 className="display mt-2 text-4xl font-bold uppercase sm:text-5xl">U-Ditch</h3></div>
-              <span className="grid h-11 w-11 shrink-0 place-items-center border border-white/50 transition group-hover:border-accent group-hover:bg-accent"><ArrowUpRight className="h-5 w-5" /></span>
-            </div>
-          </Link>
-          <Link to="/produk" className="group relative min-h-[300px] overflow-hidden bg-[hsl(var(--primary))] md:col-span-5 md:min-h-[420px]">
-            <img src={products[1].image} alt="Box Culvert beton precast" loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#111d2a]/90 via-[#111d2a]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-6 text-white sm:p-8">
-              <div><p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/60">Gorong-gorong Beton</p><h3 className="display mt-2 text-4xl font-bold uppercase sm:text-5xl">Box Culvert</h3></div>
-              <span className="grid h-11 w-11 shrink-0 place-items-center border border-white/50 transition group-hover:border-accent group-hover:bg-accent"><ArrowUpRight className="h-5 w-5" /></span>
-            </div>
-          </Link>
+          <div className="grid gap-px bg-border sm:grid-cols-3">
+            {[
+              ['01', 'Drainase & infrastruktur', 'U-Ditch, Box Culvert, dan Buis Beton untuk kebutuhan saluran serta aliran air.'],
+              ['02', 'Jalan & area publik', 'Road Barrier dan Kanstin untuk pembatas serta penataan area jalan.'],
+              ['03', 'Kawasan & properti', 'Pagar Panel dan produk precast untuk kebutuhan pembatas kawasan dan proyek.'],
+            ].map(([no, title, desc]) => (
+              <Link key={no} to="/produk" className="group bg-[#F7F7F5] p-6 transition hover:bg-white sm:p-8">
+                <div className="flex items-center justify-between"><span className="text-[10px] font-bold tracking-[0.16em] text-accent">{no}</span><ArrowUpRight className="h-5 w-5 text-foreground/45 transition group-hover:text-accent" /></div>
+                <h3 className="display mt-8 text-2xl font-bold uppercase leading-tight sm:text-3xl">{title}</h3>
+                <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">{desc}</p>
+                <span className="mt-6 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.14em] text-accent">Lihat produk <ArrowRight className="h-4 w-4" /></span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -204,9 +202,9 @@ export default function HomePage() {
       </section>
 
       {/* ARTICLES */}
-      <section className="rail py-16 sm:py-20 lg:py-24">
+      <section className="rail py-12 sm:py-16 lg:py-20">
         <div className="mb-8 grid gap-5 lg:grid-cols-[1fr_0.55fr] lg:items-end">
-          <div><p className="eyebrow mb-3">05 / Artikel & Informasi</p><h2 className="display max-w-3xl text-5xl font-bold uppercase leading-[0.88] sm:text-6xl lg:text-7xl">Referensi untuk<br />pekerjaan Anda.</h2></div>
+          <div><p className="eyebrow mb-3">05 / Artikel & Informasi</p><h2 className="display max-w-3xl text-4xl font-bold uppercase leading-[0.92] sm:text-5xl lg:text-6xl">Referensi untuk<br />pekerjaan Anda.</h2></div>
           <div className="max-w-md lg:justify-self-end"><p className="text-sm leading-7 text-muted-foreground">Kenali fungsi, pilihan spesifikasi, dan penggunaan produk beton precast.</p><Link to="/artikel" className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-accent">Baca semua artikel <ArrowRight className="h-4 w-4" /></Link></div>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
