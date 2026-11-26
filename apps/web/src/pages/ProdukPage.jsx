@@ -16,10 +16,10 @@ export default function ProdukPage() {
       </Helmet>
 
       <section className="bg-[#F2F3F1]">
-        <div className="rail grid gap-8 py-12 sm:py-16 lg:grid-cols-[1fr_0.75fr] lg:items-end lg:py-20">
+        <div className="rail grid gap-8 py-12 sm:py-12 lg:grid-cols-[1fr_0.75fr] lg:items-end lg:py-16">
           <div>
             <p className="eyebrow mb-4">Katalog / HS Beton</p>
-            <h1 className="display max-w-4xl text-[clamp(3.5rem,8vw,7.5rem)] font-bold uppercase leading-[0.82]">Pilihan beton<br /><span className="text-accent">untuk proyek.</span></h1>
+            <h1 className="display max-w-4xl text-[clamp(3rem,6.5vw,6rem)] font-bold uppercase leading-[0.88]">Pilihan beton<br /><span className="text-accent">untuk proyek.</span></h1>
           </div>
           <div className="max-w-xl lg:justify-self-end">
             <p className="text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8">Temukan produk precast untuk kebutuhan drainase, jalan, dan pembatas area. Ukuran, mutu, volume, dan lokasi pengiriman dapat dikonsultasikan sesuai kebutuhan proyek.</p>
@@ -41,7 +41,7 @@ export default function ProdukPage() {
           <p className="max-w-md text-sm leading-6 text-muted-foreground">Pilih produk untuk melihat informasi dan mengajukan kebutuhan penawaran.</p>
         </div>
 
-        <div className="grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((p, index) => (
             <article key={p.slug} className="group flex flex-col">
               <Link to={`/artikel/${p.slug}`} className="relative block overflow-hidden bg-[#eef0f1]">
@@ -55,7 +55,7 @@ export default function ProdukPage() {
                   <span className="mt-1 text-[10px] font-semibold tracking-[0.12em] text-muted-foreground">HS / {String(index + 1).padStart(2, '0')}</span>
                 </div>
                 <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">{p.desc}</p>
-                <div className="mt-5 flex flex-col gap-2 sm:flex-row">
+                <div className="mt-5 flex flex-col gap-3">
                   <a href={waLink(`Halo HS Beton, saya ingin meminta penawaran untuk produk ${p.name}.`)} target="_blank" rel="noreferrer" onClick={trackWhatsApp} className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 bg-accent px-4 text-[10px] font-bold uppercase tracking-[0.1em] text-white transition hover:brightness-95"><MessageCircle className="h-4 w-4" /> Minta Penawaran</a>
                   <Link to={`/artikel/${p.slug}`} className="inline-flex min-h-11 items-center justify-center gap-2 border border-border px-4 text-[10px] font-bold uppercase tracking-[0.1em] transition hover:border-foreground">Detail <ArrowRight className="h-4 w-4" /></Link>
                 </div>
