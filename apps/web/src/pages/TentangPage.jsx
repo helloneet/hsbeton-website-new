@@ -22,13 +22,13 @@ export default function TentangPage() {
       </Helmet>
 
       <section className="bg-[#F2F3F1]">
-        <div className="rail grid gap-8 py-12 sm:py-16 lg:grid-cols-[1fr_0.55fr] lg:items-end lg:py-20">
-          <div><p className="eyebrow mb-4">Profil / HS Beton</p><h1 className="display max-w-4xl text-[clamp(3.5rem,8vw,7.5rem)] font-bold uppercase leading-[0.82]">Membangun<br /><span className="text-accent">kepercayaan.</span></h1></div>
+        <div className="rail grid gap-8 py-12 sm:py-12 lg:grid-cols-[1fr_0.55fr] lg:items-end lg:py-16">
+          <div><p className="eyebrow mb-4">Profil / HS Beton</p><h1 className="display max-w-4xl text-[clamp(3rem,6.5vw,6rem)] font-bold uppercase leading-[0.88]">Membangun<br /><span className="text-accent">kepercayaan.</span></h1></div>
           <p className="max-w-xl text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8 lg:justify-self-end">HS Beton mendukung kebutuhan proyek dengan pilihan beton precast dan komunikasi yang terarah dari tahap konsultasi hingga pengiriman.</p>
         </div>
       </section>
 
-      <section className="rail py-12 sm:py-16 lg:py-20">
+      <section className="rail py-10 sm:py-12 lg:py-16">
         <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
             <div className="relative overflow-hidden bg-[#e9ebea]"><img src={PLANT} alt="Produk beton precast HS Beton" className="aspect-[4/3] w-full object-cover" /><span className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em]">HS Beton / Precast solutions</span></div>
@@ -47,7 +47,7 @@ export default function TentangPage() {
       </section>
 
       <section className="bg-[#F2F3F1]">
-        <div className="rail py-14 sm:py-16 lg:py-20">
+        <div className="rail py-12 sm:py-14 lg:py-16">
           <div className="mb-8 grid gap-5 lg:grid-cols-[1fr_0.6fr] lg:items-end"><div><p className="eyebrow mb-3">Cara Kami Mendukung</p><h2 className="display max-w-3xl text-4xl font-bold uppercase leading-[0.9] sm:text-5xl lg:text-6xl">Hal penting dalam<br />setiap kebutuhan.</h2></div><p className="max-w-md text-sm leading-7 text-muted-foreground lg:justify-self-end">Dari mengenali produk sampai menyelaraskan pengiriman, kami menjaga proses komunikasi tetap jelas.</p></div>
           <div className="grid gap-px bg-border sm:grid-cols-3">
             {pillars.map(({ Icon, title, text }, index) => <div key={title} className="bg-[#F2F3F1] p-6 sm:p-8"><div className="flex items-center justify-between"><span className="text-[10px] font-bold tracking-[0.16em] text-accent">0{index + 1}</span><Icon className="h-6 w-6 text-accent" strokeWidth={1.6} /></div><h3 className="display mt-8 text-2xl font-bold uppercase sm:text-3xl">{title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p></div>)}
