@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
-  ArrowRight, ArrowUpRight, ShieldCheck, Truck, Factory, FileCheck2,
+  ArrowRight, ArrowUpRight, ArrowDownRight, ShieldCheck, Truck, Factory, FileCheck2,
   Ruler, Layers3, Building2, MessageCircle
 } from 'lucide-react';
 import Layout from '@/components/Layout';
