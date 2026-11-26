@@ -42,13 +42,13 @@ export default function HomePage() {
 
       {/* EDITORIAL HERO */}
       <section className="relative overflow-hidden bg-[#F7F7F5]">
-        <div className="rail relative z-10 grid gap-8 pb-8 pt-10 sm:pb-12 sm:pt-14 lg:min-h-[650px] lg:grid-cols-[0.86fr_1.14fr] lg:items-center lg:gap-12 lg:py-16">
+        <div className="rail relative z-10 grid gap-8 pb-8 pt-10 sm:pb-12 sm:pt-14 lg:min-h-[560px] lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-10 lg:py-12">
           <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="relative z-10">
             <div className="mb-6 flex items-center gap-3">
               <span className="h-[3px] w-9 bg-accent" />
               <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-foreground/60 sm:text-xs">Solusi beton precast · HS Beton</p>
             </div>
-            <h1 className="display max-w-[720px] text-[clamp(3.25rem,8vw,7.25rem)] font-bold uppercase leading-[0.82] tracking-[-0.035em]">
+            <h1 className="display max-w-[720px] text-[clamp(3rem,6.2vw,6.1rem)] font-bold uppercase leading-[0.88] tracking-[-0.025em]">
               Beton<br />Precast
               <span className="mt-3 block text-accent">untuk proyek</span>
               <span className="block">yang kokoh.</span>
@@ -71,7 +71,7 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="relative min-h-[330px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[460px] lg:min-h-[550px]">
+          <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="relative min-h-[330px] overflow-hidden bg-[hsl(var(--primary))] sm:min-h-[460px] lg:min-h-[500px]">
             <img src={HERO} alt="Produk beton precast HS Beton" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#101b29]/75 via-[#101b29]/5 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-5 text-white sm:p-8">
@@ -98,11 +98,11 @@ export default function HomePage() {
       </div>
 
       {/* CATALOG — clean product-led grid */}
-      <section className="rail py-16 sm:py-20 lg:py-24">
+      <section className="rail py-12 sm:py-16 lg:py-20">
         <div className="mb-9 grid gap-6 lg:grid-cols-[1fr_0.55fr] lg:items-end">
           <div>
             <p className="eyebrow mb-3">01 / Katalog Produk</p>
-            <h2 className="display max-w-3xl text-5xl font-bold uppercase leading-[0.88] sm:text-6xl lg:text-7xl">Produk yang<br className="hidden sm:block" /> membangun fondasi.</h2>
+            <h2 className="display max-w-3xl text-4xl font-bold uppercase leading-[0.92] sm:text-5xl lg:text-6xl">Produk yang<br className="hidden sm:block" /> membangun fondasi.</h2>
           </div>
           <div className="max-w-md lg:justify-self-end">
             <p className="text-sm leading-7 text-muted-foreground">Kenali pilihan beton precast HS Beton untuk beragam pekerjaan. Nama produk tetap berjalan di bagian atas sebagai navigasi visual.</p>
@@ -117,12 +117,12 @@ export default function HomePage() {
                 <img src={product.image} alt={product.name} loading="lazy" className="aspect-[1.35/1] w-full object-cover transition duration-700 group-hover:scale-[1.04]" />
                 <span className="absolute bottom-3 right-3 grid h-10 w-10 place-items-center bg-accent text-white transition group-hover:bg-[hsl(var(--primary))]"><ArrowUpRight className="h-5 w-5" /></span>
               </div>
-              <div className="flex items-start justify-between gap-4 border-b border-border py-4">
+              <div className="flex flex-col items-start gap-3 border-b border-border py-4">
                 <div>
                   <h3 className="display text-2xl font-bold uppercase leading-none sm:text-3xl">{product.name}</h3>
                   <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.15em] text-accent">{product.spec}</p>
                 </div>
-                <span className="max-w-[190px] text-right text-xs leading-5 text-muted-foreground">{product.desc}</span>
+                <span className="max-w-sm text-left text-sm leading-6 text-muted-foreground">{product.desc}</span>
               </div>
             </Link>
           ))}
@@ -162,7 +162,7 @@ export default function HomePage() {
       </section>
 
       {/* APPLICATION VISUALS */}
-      <section className="rail py-16 sm:py-20 lg:py-24">
+      <section className="rail py-12 sm:py-16 lg:py-20">
         <div className="mb-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="eyebrow mb-3">03 / Pilihan Produk</p>
@@ -192,7 +192,7 @@ export default function HomePage() {
 
       {/* PARTNERS — Jagoan Besi style: heading above, logo row below */}
       <section className="border-y border-border bg-[#F7F7F5]">
-        <div className="rail py-14 sm:py-16 lg:py-20">
+        <div className="rail py-12 sm:py-14 lg:py-16">
           <div className="grid gap-5 border-b border-border pb-7 lg:grid-cols-[1fr_0.65fr] lg:items-end">
             <div><p className="eyebrow mb-3">04 / Mitra HS Beton</p><h2 className="display max-w-3xl text-4xl font-bold uppercase leading-[0.9] sm:text-5xl lg:text-6xl">Dipercaya oleh kontraktor,<br className="hidden lg:block" /> developer, dan instansi.</h2></div>
             <p className="max-w-md text-sm leading-7 text-muted-foreground lg:justify-self-end">Kami menghargai kerja sama dengan berbagai pihak dalam mendukung kebutuhan proyek konstruksi.</p>
