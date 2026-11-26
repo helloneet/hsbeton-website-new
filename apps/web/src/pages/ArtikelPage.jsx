@@ -28,8 +28,8 @@ export default function ArtikelPage() {
       </Helmet>
 
       <section className="relative overflow-hidden bg-[#F2F3F1]">
-        <div className="rail grid gap-8 py-12 sm:py-16 lg:grid-cols-[1fr_0.65fr] lg:items-end lg:py-20">
-          <div><p className="eyebrow mb-4">Artikel / Informasi</p><h1 className="display max-w-4xl text-[clamp(3.5rem,8vw,7.5rem)] font-bold uppercase leading-[0.82]">Pengetahuan<br /><span className="text-accent">untuk proyek.</span></h1></div>
+        <div className="rail grid gap-8 py-12 sm:py-12 lg:grid-cols-[1fr_0.65fr] lg:items-end lg:py-16">
+          <div><p className="eyebrow mb-4">Artikel / Informasi</p><h1 className="display max-w-4xl text-[clamp(3rem,6.5vw,6rem)] font-bold uppercase leading-[0.88]">Pengetahuan<br /><span className="text-accent">untuk proyek.</span></h1></div>
           <div className="max-w-xl lg:justify-self-end"><p className="text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8">Kenali fungsi dan karakteristik produk beton precast agar diskusi kebutuhan proyek lebih terarah.</p><p className="mt-5 text-[10px] font-bold uppercase tracking-[0.18em] text-foreground/45">HS Beton / Product knowledge</p></div>
         </div>
       </section>
@@ -41,13 +41,13 @@ export default function ArtikelPage() {
         </div>
       </div>
 
-      <section className="rail py-12 sm:py-16 lg:py-20">
+      <section className="rail py-10 sm:py-12 lg:py-16">
         <div className="mb-8 flex flex-col gap-4 border-b border-border pb-6 sm:flex-row sm:items-end sm:justify-between">
           <div><p className="eyebrow mb-3">Pustaka Produk</p><h2 className="display text-4xl font-bold uppercase leading-[0.9] sm:text-5xl">Artikel Beton Precast</h2></div>
           <p className="max-w-md text-sm leading-6 text-muted-foreground">Informasi dasar untuk mengenali produk dan menyiapkan kebutuhan pengadaan.</p>
         </div>
 
-        <div className="grid gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {articles.map((article, index) => (
             <Link key={article.slug} to={`/artikel/${article.slug}`} className="group flex flex-col">
               <div className="relative overflow-hidden bg-[#eef0f1]">
